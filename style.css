@@ -15,12 +15,9 @@ html{
 
 
 body{
-
     background:#ffffff;
-    color:#1e293b;
-
+    color:#111827;
 }
-
 
 
 /* ================= NAVBAR ================= */
@@ -511,5 +508,63 @@ nav ul{
 
 }
 
+
+}
+/* Why Choose Me Section */
+
+.why-grid{
+    width:90%;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+
+.why-card{
+
+    background:white;
+    border:1px solid #dbeafe;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(37,99,235,0.12);
+    transition:.3s;
+
+}
+
+
+.why-card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(37,99,235,0.25);
+
+}
+
+
+.why-card h3{
+
+    color:#2563eb;
+    margin-bottom:15px;
+
+}
+
+
+.why-card p{
+
+    color:#475569;
+
+}
+
+
+.why-grid::before{
+
+    content:"Why Choose Me?";
+    grid-column:1/-1;
+    text-align:center;
+    font-size:42px;
+    font-weight:700;
+    color:#2563eb;
+    margin-bottom:20px;
 
 }
