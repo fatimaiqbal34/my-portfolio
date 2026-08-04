@@ -392,3 +392,90 @@ nav ul{
 
 
 }
+/* Project Detail Page */
+
+.project-detail{
+    width:85%;
+    margin:80px auto;
+    text-align:center;
+}
+
+
+.project-detail h1{
+    font-size:42px;
+    color:#0b5ed7;
+    margin-bottom:20px;
+}
+
+
+.project-intro{
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+}
+
+
+.project-box{
+
+    background:white;
+    margin:30px auto;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    text-align:left;
+}
+
+
+.project-box h2{
+    color:#0b5ed7;
+    margin-bottom:15px;
+}
+
+
+.project-box li{
+    margin:10px 0;
+}
+
+
+.skills span{
+
+    display:inline-block;
+    background:#e8f1ff;
+    color:#0b5ed7;
+    padding:8px 15px;
+    margin:5px;
+    border-radius:20px;
+    font-weight:500;
+
+}
+
+
+.btn{
+
+    display:inline-block;
+    margin-top:30px;
+    padding:12px 25px;
+    background:#0b5ed7;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+
+}
+
+
+.btn:hover{
+
+    background:#084298;
+
+}
+
+
+footer{
+
+    text-align:center;
+    padding:20px;
+    background:#0b5ed7;
+    color:white;
+
+}
