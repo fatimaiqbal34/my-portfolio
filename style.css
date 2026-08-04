@@ -1,3 +1,4 @@
+/* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 *{
@@ -9,18 +10,18 @@
 }
 
 body{
-    background:#f5f7fb;
-    color:#333;
+    background:#ffffff;
+    color:#111;
 }
 
-/* ===== Navigation ===== */
+/* ================= NAVBAR ================= */
 
 header{
-    background:#0f172a;
+    background:#111;
     position:sticky;
     top:0;
     z-index:1000;
-    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
 }
 
 nav{
@@ -29,18 +30,18 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:18px 0;
+    padding:20px 0;
 }
 
 .logo{
-    color:#fff;
-    font-size:28px;
+    color:white;
+    font-size:30px;
     font-weight:700;
 }
 
 nav ul{
-    list-style:none;
     display:flex;
+    list-style:none;
 }
 
 nav ul li{
@@ -48,22 +49,22 @@ nav ul li{
 }
 
 nav ul li a{
+    color:white;
     text-decoration:none;
-    color:#fff;
     font-weight:500;
     transition:.3s;
 }
 
-nav ul li a:hover{
-    color:#38bdf8;
+nav ul li a:hover,
+nav ul li a.active{
+    color:#cfcfcf;
 }
 
-/* ===== Hero ===== */
+/* ================= HERO ================= */
 
 .hero{
     width:90%;
-    margin:auto;
-    min-height:90vh;
+    margin:80px auto;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -80,194 +81,119 @@ nav ul li a:hover{
 }
 
 .hero-text span{
-    color:#2563eb;
+    color:#000;
 }
 
 .hero-text h3{
-    color:#64748b;
-    font-size:28px;
+    color:#666;
     margin-bottom:20px;
 }
 
 .hero-text p{
-    font-size:18px;
     line-height:1.8;
-    margin-bottom:35px;
+    margin-bottom:30px;
 }
 
-/* Button */
+/* ================= BUTTON ================= */
 
 .btn{
     display:inline-block;
-    padding:15px 35px;
-    background:#2563eb;
-    color:#fff;
+    padding:14px 35px;
+    background:#111;
+    color:white;
     text-decoration:none;
-    border-radius:40px;
+    border-radius:8px;
+    border:2px solid #111;
     font-weight:600;
     transition:.3s;
 }
 
 .btn:hover{
-    background:#1d4ed8;
-    transform:translateY(-5px);
+    background:white;
+    color:#111;
 }
 
-/* ===== Profile Circle ===== */
+/* ================= PROFILE ================= */
 
 .hero-image{
-    flex:1;
-    display:flex;
-    justify-content:center;
-}
-
-.profile-circle{
-    width:320px;
-    height:320px;
-    border-radius:50%;
-    background:linear-gradient(135deg,#2563eb,#7c3aed);
     display:flex;
     justify-content:center;
     align-items:center;
-    color:#fff;
-    font-size:100px;
-    font-weight:bold;
-    box-shadow:0 15px 40px rgba(0,0,0,.2);
 }
 
-/* ===== Featured Projects ===== */
+.profile-circle{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background:#111;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:90px;
+    font-weight:bold;
+}
 
-.featured{
+/* ================= CARDS ================= */
+
+.cards,
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card,
+.project-card,
+.info-box{
+    background:white;
+    border:1px solid #ddd;
+    border-radius:15px;
+    padding:30px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover,
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 35px rgba(0,0,0,.15);
+}
+
+.card h3,
+.project-card h2{
+    margin-bottom:15px;
+}
+
+.card p,
+.project-card p{
+    line-height:1.8;
+}
+
+/* ================= SECTION ================= */
+
+.featured,
+.projects,
+.about,
+.education,
+.skills,
+.experience{
     width:90%;
     margin:80px auto;
 }
 
-.featured h2{
+.featured h2,
+.projects h1,
+.about h1,
+.education h2,
+.skills h2,
+.experience h2{
     text-align:center;
-    font-size:40px;
-    color:#0f172a;
     margin-bottom:40px;
-}
-
-.cards{
-    display:flex;
-    gap:30px;
-}
-
-.card{
-    flex:1;
-    background:#fff;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-}
-
-.card h3{
-    color:#2563eb;
-    margin-bottom:15px;
-}
-
-.card p{
-    line-height:1.7;
-}
-
-/* ===== Footer ===== */
-
-footer{
-    background:#0f172a;
-    color:white;
-    text-align:center;
-    padding:25px;
-    margin-top:70px;
-}
-
-/* ===== Responsive ===== */
-
-@media(max-width:900px){
-
-.hero{
-    flex-direction:column-reverse;
-    text-align:center;
-    padding:50px 0;
-}
-
-.hero-text h1{
     font-size:42px;
 }
 
-.hero-text h3{
-    font-size:22px;
-}
-
-.hero-text p{
-    font-size:16px;
-}
-
-.cards{
-    flex-direction:column;
-}
-
-nav{
-    flex-direction:column;
-}
-
-nav ul{
-    margin-top:20px;
-}
-
-nav ul li{
-    margin:0 12px;
-}
-
-.profile-circle{
-    width:230px;
-    height:230px;
-    font-size:70px;
-}
-}
-/* ================= ABOUT PAGE ================= */
-
-.about{
-    width:90%;
-    margin:70px auto;
-}
-
-.about h1{
-    font-size:45px;
-    color:#2563eb;
-    margin-bottom:20px;
-}
-
-.about p{
-    line-height:1.8;
-    margin-bottom:20px;
-    font-size:18px;
-}
-
-.education,
-.skills{
-    width:90%;
-    margin:50px auto;
-}
-
-.education h2,
-.skills h2{
-    font-size:35px;
-    color:#0f172a;
-    margin-bottom:25px;
-}
-
-.info-box{
-    background:white;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-}
+/* ================= SKILLS ================= */
 
 .skill-container{
     display:flex;
@@ -276,86 +202,13 @@ nav ul li{
 }
 
 .skill-container span{
-    background:#2563eb;
+    background:#111;
     color:white;
-    padding:12px 22px;
+    padding:10px 20px;
     border-radius:30px;
-    font-weight:500;
-}
-/* ================= PROJECT PAGE ================= */
-
-.projects{
-    width:90%;
-    margin:70px auto;
 }
 
-.projects h1{
-    text-align:center;
-    font-size:45px;
-    color:#2563eb;
-}
-
-.project-intro{
-    text-align:center;
-    margin:20px auto 50px;
-    max-width:700px;
-    font-size:18px;
-}
-
-.project-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
-}
-
-.project-card{
-    background:#fff;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.project-card:hover{
-    transform:translateY(-10px);
-}
-
-.project-card h2{
-    color:#2563eb;
-    margin-bottom:15px;
-}
-
-.project-card p{
-    line-height:1.7;
-    margin-bottom:20px;
-}
-
-.project-card ul{
-    padding-left:20px;
-}
-
-.project-card li{
-    margin-bottom:8px;
-}
-/* Active Navigation Link */
-nav ul li a.active{
-    color:#38bdf8;
-    border-bottom:2px solid #38bdf8;
-    padding-bottom:5px;
-}
-/* Why Choose Me */
-
-.why-me{
-    width:90%;
-    margin:80px auto;
-    text-align:center;
-}
-
-.why-me h2{
-    font-size:40px;
-    color:#0f172a;
-    margin-bottom:40px;
-}
+/* ================= WHY ME ================= */
 
 .why-grid{
     display:grid;
@@ -365,40 +218,64 @@ nav ul li a.active{
 
 .why-card{
     background:white;
+    border:1px solid #ddd;
     padding:30px;
     border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
     transition:.3s;
 }
 
 .why-card:hover{
-    transform:translateY(-10px);
+    transform:translateY(-8px);
 }
 
 .why-card h3{
-    color:#2563eb;
     margin-bottom:15px;
 }
-.project-img{
-    width:100%;
-    height:180px;
-    object-fit:cover;
-    border-radius:10px;
-    margin-bottom:20px;
-}
 
-.project-card .btn{
-    margin-top:20px;
-    display:inline-block;
-}
-.btn-outline{
-    background:white;
-    color:#2563eb;
-    border:2px solid #2563eb;
-    margin-left:15px;
-}
+/* ================= FOOTER ================= */
 
-.btn-outline:hover{
-    background:#2563eb;
+footer{
+    background:#111;
     color:white;
+    text-align:center;
+    padding:35px;
+    margin-top:80px;
+}
+
+footer a{
+    color:white;
+    text-decoration:none;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:15px;
+}
+
+.profile-circle{
+width:220px;
+height:220px;
+font-size:70px;
+}
+
+.hero-text h1{
+font-size:42px;
+}
+
 }
