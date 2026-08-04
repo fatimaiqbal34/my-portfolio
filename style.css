@@ -230,3 +230,55 @@ nav ul li{
     font-size:70px;
 }
 }
+/* ================= ABOUT PAGE ================= */
+
+.about{
+    width:90%;
+    margin:70px auto;
+}
+
+.about h1{
+    font-size:45px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.about p{
+    line-height:1.8;
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+.education,
+.skills{
+    width:90%;
+    margin:50px auto;
+}
+
+.education h2,
+.skills h2{
+    font-size:35px;
+    color:#0f172a;
+    margin-bottom:25px;
+}
+
+.info-box{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.skill-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skill-container span{
+    background:#2563eb;
+    color:white;
+    padding:12px 22px;
+    border-radius:30px;
+    font-weight:500;
+}
