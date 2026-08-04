@@ -1,4 +1,3 @@
-/* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 
@@ -16,63 +15,87 @@ html{
 
 
 body{
-    background:#000000;
-    color:#ffffff;
+
+    background:#ffffff;
+    color:#1e293b;
+
 }
 
 
 
 /* ================= NAVBAR ================= */
 
+
 header{
-    background:#050505;
+
+    background:#2563eb;
     position:sticky;
     top:0;
     z-index:1000;
     box-shadow:0 3px 15px rgba(37,99,235,0.2);
+
 }
 
 
 nav{
+
     width:90%;
     margin:auto;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:20px 0;
+
 }
+
 
 
 .logo{
-    color:#2563eb;
+
+    color:white;
     font-size:30px;
     font-weight:700;
+
 }
+
 
 
 nav ul{
+
     display:flex;
     list-style:none;
+
 }
+
 
 
 nav ul li{
+
     margin-left:30px;
+
 }
 
 
+
 nav ul li a{
+
     color:white;
     text-decoration:none;
     font-weight:500;
     transition:.3s;
+
 }
+
 
 
 nav ul li a:hover,
 nav ul li a.active{
-    color:#93c5fd;
+
+    color:#bfdbfe;
+
 }
+
+
 
 
 
@@ -91,18 +114,23 @@ nav ul li a.active{
 }
 
 
+
 .hero-text{
+
     flex:1;
+
 }
+
 
 
 .hero-text h1{
 
     font-size:60px;
+    color:#0f172a;
     margin-bottom:15px;
-    color:white;
 
 }
+
 
 
 .hero-text span{
@@ -112,21 +140,25 @@ nav ul li a.active{
 }
 
 
+
 .hero-text h3{
 
-    color:#93c5fd;
+    color:#475569;
     margin-bottom:20px;
 
 }
 
 
+
 .hero-text p{
 
     line-height:1.8;
+    color:#475569;
     margin-bottom:30px;
-    color:#d1d5db;
 
 }
+
+
 
 
 
@@ -141,17 +173,16 @@ nav ul li a.active{
     color:white;
     text-decoration:none;
     border-radius:8px;
-    border:2px solid #2563eb;
     font-weight:600;
     transition:.3s;
 
 }
 
 
+
 .btn:hover{
 
-    background:white;
-    color:#2563eb;
+    background:#1d4ed8;
 
 }
 
@@ -169,6 +200,7 @@ nav ul li a.active{
     align-items:center;
 
 }
+
 
 
 .profile-circle{
@@ -190,14 +222,16 @@ nav ul li a.active{
 
 
 
+
 /* ================= CARDS ================= */
 
 
 .cards,
-.project-grid{
+.project-grid,
+.why-grid{
 
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:30px;
 
 }
@@ -206,14 +240,14 @@ nav ul li a.active{
 
 .card,
 .project-card,
-.info-box{
+.info-box,
+.why-card{
 
     background:white;
-    color:#111;
     border:1px solid #dbeafe;
     border-radius:15px;
     padding:30px;
-    box-shadow:0 10px 25px rgba(37,99,235,.08);
+    box-shadow:0 10px 25px rgba(37,99,235,.1);
     transition:.3s;
 
 }
@@ -221,10 +255,11 @@ nav ul li a.active{
 
 
 .card:hover,
-.project-card:hover{
+.project-card:hover,
+.why-card:hover{
 
-    transform:translateY(-10px);
-    box-shadow:0 20px 35px rgba(37,99,235,.18);
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(37,99,235,.2);
 
 }
 
@@ -232,86 +267,19 @@ nav ul li a.active{
 
 .card h3,
 .project-card h2,
-.project-card h3{
+.project-card h3,
+.why-card h3{
 
-    margin-bottom:15px;
     color:#2563eb;
+    margin-bottom:15px;
 
 }
 
 
 
 .card p,
-.project-card p{
-
-    line-height:1.8;
-    color:#475569;
-
-}
-
-
-
-
-
-/* ================= PROJECT DETAIL ================= */
-
-
-.project-detail{
-
-    width:85%;
-    margin:80px auto;
-    text-align:center;
-
-}
-
-
-.project-detail h1{
-
-    font-size:42px;
-    color:#2563eb;
-    margin-bottom:20px;
-
-}
-
-
-
-.project-intro{
-
-    max-width:700px;
-    margin:auto;
-    font-size:18px;
-    color:#d1d5db;
-
-}
-
-
-
-.project-box{
-
-    background:white;
-    color:#111;
-    margin:30px auto;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(37,99,235,.15);
-    text-align:left;
-
-}
-
-
-
-.project-box h2{
-
-    color:#2563eb;
-    margin-bottom:15px;
-    text-align:left;
-
-}
-
-
-
-.project-box p,
-.project-box li{
+.project-card p,
+.why-card p{
 
     color:#475569;
     line-height:1.8;
@@ -330,7 +298,8 @@ nav ul li a.active{
 .about,
 .education,
 .skills,
-.experience{
+.experience,
+.why-me{
 
     width:90%;
     margin:80px auto;
@@ -344,12 +313,43 @@ nav ul li a.active{
 .about h1,
 .education h2,
 .skills h2,
-.experience h2{
+.experience h2,
+.why-me h2{
 
     text-align:center;
-    margin-bottom:40px;
+    color:#0f172a;
     font-size:42px;
-    color:white;
+    margin-bottom:40px;
+
+}
+
+
+
+
+
+/* ================= WHY CHOOSE ME ================= */
+
+
+.why-me{
+
+    text-align:center;
+
+}
+
+
+
+.why-grid{
+
+    margin-top:30px;
+
+}
+
+
+
+.why-card{
+
+    min-height:180px;
+    text-align:center;
 
 }
 
@@ -383,46 +383,57 @@ nav ul li a.active{
 
 
 
-/* ================= WHY ME ================= */
+/* ================= PROJECT DETAIL ================= */
 
 
-.why-grid{
+.project-detail{
 
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+    width:85%;
+    margin:80px auto;
+    text-align:center;
 
 }
 
 
 
-.why-card{
+.project-detail h1{
+
+    font-size:42px;
+    color:#2563eb;
+
+}
+
+
+
+.project-box{
 
     background:white;
-    border:1px solid #dbeafe;
+    margin:30px auto;
     padding:30px;
     border-radius:15px;
-    transition:.3s;
+    text-align:left;
+    border:1px solid #dbeafe;
 
 }
 
 
 
-.why-card:hover{
-
-    transform:translateY(-8px);
-    box-shadow:0 15px 30px rgba(37,99,235,.15);
-
-}
-
-
-
-.why-card h3{
+.project-box h2{
 
     color:#2563eb;
-    margin-bottom:15px;
 
 }
+
+
+
+.project-box p,
+.project-box li{
+
+    color:#475569;
+    line-height:1.8;
+
+}
+
 
 
 
@@ -432,12 +443,11 @@ nav ul li a.active{
 
 footer{
 
-    background:#050505;
+    background:#2563eb;
     color:white;
     text-align:center;
     padding:35px;
     margin-top:80px;
-    border-top:2px solid #2563eb;
 
 }
 
@@ -447,29 +457,6 @@ footer a{
 
     color:white;
     text-decoration:none;
-
-}
-
-
-
-footer a:hover{
-
-    color:#93c5fd;
-    text-decoration:underline;
-
-}
-
-
-
-
-
-/* ================= IMAGES ================= */
-
-
-img{
-
-    max-width:100%;
-    border-radius:15px;
 
 }
 
@@ -491,6 +478,7 @@ img{
 }
 
 
+
 nav{
 
     flex-direction:column;
@@ -498,11 +486,13 @@ nav{
 }
 
 
+
 nav ul{
 
     margin-top:15px;
 
 }
+
 
 
 .profile-circle{
@@ -514,16 +504,10 @@ nav ul{
 }
 
 
+
 .hero-text h1{
 
     font-size:42px;
-
-}
-
-
-.project-detail{
-
-    width:95%;
 
 }
 
