@@ -391,3 +391,14 @@ nav ul li a.active{
     margin-top:20px;
     display:inline-block;
 }
+.btn-outline{
+    background:white;
+    color:#2563eb;
+    border:2px solid #2563eb;
+    margin-left:15px;
+}
+
+.btn-outline:hover{
+    background:#2563eb;
+    color:white;
+}
