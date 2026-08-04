@@ -337,3 +337,9 @@ nav ul li{
 .project-card li{
     margin-bottom:8px;
 }
+/* Active Navigation Link */
+nav ul li a.active{
+    color:#38bdf8;
+    border-bottom:2px solid #38bdf8;
+    padding-bottom:5px;
+}
