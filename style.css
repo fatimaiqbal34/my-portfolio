@@ -701,3 +701,27 @@ nav ul{
         max-width:260px;
     }
 }
+.project-buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    margin:40px auto;
+    width:100%;
+}
+
+.project-buttons .btn{
+    min-width:200px;
+    text-align:center;
+}
+
+@media (max-width:768px){
+    .project-buttons{
+        flex-direction:column;
+    }
+
+    .project-buttons .btn{
+        width:100%;
+        max-width:260px;
+    }
+}
