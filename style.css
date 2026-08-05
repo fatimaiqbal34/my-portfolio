@@ -557,14 +557,12 @@ nav ul{
 }
 
 
-.why-grid::before{
+<section class="why-me">
 
-    content:"Why Choose Me?";
-    grid-column:1/-1;
-    text-align:center;
-    font-size:42px;
-    font-weight:700;
-    color:#2563eb;
-    margin-bottom:20px;
+    <h2>Why Choose Me?</h2>
+
+    <div class="why-grid">
+
+        ...
 
 }
