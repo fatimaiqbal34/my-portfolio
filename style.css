@@ -1087,3 +1087,47 @@ footer a:hover {
         min-width: auto;
     }
 }
+/* =====================================================
+   FOOTER - FINAL FIX
+===================================================== */
+
+footer {
+    background: #2563eb;
+    color: #ffffff;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+    margin-top: 60px;
+
+    border-top: 1px solid #1d4ed8;
+}
+
+footer p {
+    color: #ffffff;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+footer a {
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #dbeafe;
+}
+
+
+/* Footer bottom border */
+footer .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.35);
+
+    margin-top: 25px;
+
+    padding-top: 15px;
+}
