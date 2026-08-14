@@ -1,127 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>JobFlow ETL Pipeline | Fatima Iqbal</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <body>
 
-    <!-- ================= NAVBAR ================= -->
 
-    <header>
-        <nav>
-            <h2 class="logo">Fatima Iqbal</h2>
+<!-- ================= NAVBAR ================= -->
 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+
+    <nav>
+
+        <h2 class="logo">Fatima Iqbal</h2>
+
+        <ul>
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+            <li>
+                <a href="projects.html">Projects</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
 
 
-    <!-- ================= PROJECT DETAIL ================= -->
 
-    <section class="project-detail">
+<!-- ================= PROJECT DETAIL ================= -->
 
-        <h1>⚙ JobFlow ETL Pipeline</h1>
+<section class="project-detail">
 
-        <p class="project-intro">
-            A Python-based ETL pipeline developed to automate the process of extracting,
-            transforming, and loading job listing data into a structured database.
+
+    <h1>⚙ JobFlow ETL Pipeline</h1>
+
+
+    <p class="project-intro">
+
+        A Python-based ETL pipeline designed to automate the
+        extraction, transformation, and loading of job listing
+        data into structured storage for further analysis.
+
+    </p>
+
+
+
+    <!-- ================= OVERVIEW ================= -->
+
+    <div class="project-box">
+
+        <h2>Project Overview</h2>
+
+        <p>
+
+            JobFlow ETL is a data engineering project that collects
+            job listing data from an external API, cleans and
+            transforms the raw information, and loads the processed
+            data into a SQLite database while also generating a
+            clean CSV output.
+
+            The project demonstrates a complete Extract,
+            Transform, Load workflow using Python.
+
         </p>
 
+    </div>
 
-        <div class="project-box">
 
-            <h2>Project Overview</h2>
 
-            <p>
-                JobFlow ETL is a Python project that collects job listing data,
-                cleans and transforms the information, and stores the processed
-                data in a SQLite database while also generating CSV outputs.
-                The project follows the complete ETL (Extract, Transform, Load)
-                workflow used in real-world data engineering.
-            </p>
+    <!-- ================= PROBLEM ================= -->
+
+    <div class="project-box">
+
+        <h2>Problem I Solved</h2>
+
+        <p>
+
+            Raw job listing data can contain inconsistent formats,
+            missing values, duplicated information, and unnecessary
+            fields.
+
+            The pipeline automates the process of converting this
+            raw data into a cleaner and more structured format that
+            can be stored and used for further analysis.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- ================= ETL WORKFLOW ================= -->
+
+    <div class="project-box">
+
+        <h2>ETL Workflow</h2>
+
+        <ul>
+
+            <li>
+
+                <strong>Extract:</strong>
+                Retrieved job listing data from API endpoints
+                using Python.
+
+            </li>
+
+            <li>
+
+                <strong>Transform:</strong>
+                Cleaned, normalized, and transformed raw job data
+                using defined data-processing rules.
+
+            </li>
+
+            <li>
+
+                <strong>Load:</strong>
+                Stored processed data in a SQLite database and
+                generated a clean CSV output.
+
+            </li>
+
+            <li>
+
+                <strong>Logging:</strong>
+                Recorded pipeline execution information and
+                errors for monitoring and debugging.
+
+            </li>
+
+        </ul>
+
+    </div>
+
+
+
+    <!-- ================= CONTRIBUTIONS ================= -->
+
+    <div class="project-box">
+
+        <h2>My Contributions</h2>
+
+        <ul>
+
+            <li>
+                Developed the Python-based ETL workflow.
+            </li>
+
+            <li>
+                Integrated API endpoints for job data extraction.
+            </li>
+
+            <li>
+                Implemented pagination for retrieving job listings.
+            </li>
+
+            <li>
+                Applied data cleaning and normalization rules.
+            </li>
+
+            <li>
+                Transformed raw job listing information into
+                structured records.
+            </li>
+
+            <li>
+                Loaded processed data into SQLite.
+            </li>
+
+            <li>
+                Generated cleaned CSV output for analysis.
+            </li>
+
+            <li>
+                Implemented logging and error-handling mechanisms.
+            </li>
+
+        </ul>
+
+    </div>
+
+
+
+    <!-- ================= DATA PROCESSING ================= -->
+
+    <div class="project-box">
+
+        <h2>Data Processing</h2>
+
+        <p>
+
+            The transformation stage focused on preparing job
+            listing data for reliable storage and downstream
+            analysis.
+
+            The pipeline handled data cleaning, normalization,
+            missing or inconsistent values, and structured output
+            generation.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- ================= TECHNOLOGIES ================= -->
+
+    <div class="project-box">
+
+        <h2>Technologies Used</h2>
+
+
+        <div class="skills">
+
+            <span>Python</span>
+
+            <span>REST APIs</span>
+
+            <span>SQLite</span>
+
+            <span>CSV</span>
+
+            <span>JSON</span>
+
+            <span>Data Processing</span>
+
+            <span>ETL</span>
+
+            <span>Git & GitHub</span>
 
         </div>
 
-
-        <div class="project-box">
-
-            <h2>My Contributions</h2>
-
-            <ul>
-                <li>Extracted job listing data from APIs</li>
-                <li>Performed data cleaning and preprocessing</li>
-                <li>Transformed raw data into structured format</li>
-                <li>Loaded processed data into SQLite database</li>
-                <li>Exported cleaned data to CSV files</li>
-                <li>Implemented logging and error handling</li>
-            </ul>
-
-        </div>
+    </div>
 
 
-        <div class="project-box">
 
-            <h2>Technologies Used</h2>
+    <!-- ================= PROJECT STRUCTURE ================= -->
 
-            <div class="skills">
+    <div class="project-box">
 
-                <span>Python</span>
-                <span>SQLite</span>
-                <span>JSON</span>
-                <span>REST API</span>
-                <span>GitHub</span>
+        <h2>Project Outputs</h2>
 
-            </div>
+        <ul>
 
-        </div>
+            <li>
+                SQLite database containing processed job data.
+            </li>
 
+            <li>
+                Clean CSV dataset for further analysis.
+            </li>
 
-        <div class="project-box">
+            <li>
+                Execution log containing pipeline activity.
+            </li>
 
-            <h2>Project Outcome</h2>
+            <li>
+                Configurable API settings for data extraction.
+            </li>
 
-            <p>
-                This project improved my understanding of data engineering,
-                ETL workflows, data preprocessing, and database management.
-                It also strengthened my Python programming and problem-solving skills.
-            </p>
+        </ul>
 
-        </div>
-
-
-        <!-- ================= BUTTONS ================= -->
-
-        <div class="project-buttons">
-
-            <a href="projects.html" class="btn">
-                ← Back to Projects
-            </a>
-
-            <a href="https://github.com/fatimaiqbal34/JobFlow-ETL"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="btn">
-                View on GitHub
-            </a>
-
-        </div>
-
-    </section>
+    </div>
 
 
-    <!-- ================= FOOTER ================= -->
 
-    <footer>
-        <p>© 2026 Fatima Iqbal | Data Science & AI Portfolio</p>
-    </footer>
+    <!-- ================= OUTCOME ================= -->
+
+    <div class="project-box">
+
+        <h2>Project Outcome</h2>
+
+        <p>
+
+            This project strengthened my understanding of data
+            engineering workflows, API integration, data
+            preprocessing, database management, and automation.
+
+            It also improved my Python programming and
+            problem-solving skills while working with
+            real-world style data pipelines.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- ================= FUTURE IMPROVEMENTS ================= -->
+
+    <div class="project-box">
+
+        <h2>Future Improvements</h2>
+
+        <ul>
+
+            <li>
+                Add PostgreSQL database support.
+            </li>
+
+            <li>
+                Schedule automated ETL runs.
+            </li>
+
+            <li>
+                Add data quality monitoring.
+            </li>
+
+            <li>
+                Build an analytics dashboard for job data.
+            </li>
+
+            <li>
+                Add automated pipeline notifications.
+            </li>
+
+        </ul>
+
+    </div>
+
+
+
+    <!-- ================= BUTTONS ================= -->
+
+    <div class="project-buttons">
+
+        <a href="projects.html" class="btn">
+            ← Back to Projects
+        </a>
+
+
+        <a href="https://github.com/fatimaiqbal34/JobFlow-ETL"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn">
+
+            View on GitHub
+
+        </a>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 Fatima Iqbal | Data Science & AI Portfolio
+    </p>
+
+</footer>
+
 
 </body>
+
 </html>
