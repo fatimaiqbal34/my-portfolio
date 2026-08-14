@@ -398,10 +398,10 @@ footer a:hover{
 }
 
 
+```css
 /* ================= PROJECT IMAGES ================= */
 
 /* Front Page */
-
 .card {
     padding: 18px;
     overflow: hidden;
@@ -410,7 +410,7 @@ footer a:hover{
 .featured-project-image {
     width: calc(100% + 36px);
     height: 190px;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
     display: block;
     margin: -18px -18px 18px -18px;
@@ -419,7 +419,6 @@ footer a:hover{
 
 
 /* Projects Page */
-
 .project-card {
     overflow: hidden;
 }
@@ -427,128 +426,11 @@ footer a:hover{
 .project-card-image {
     width: calc(100% + 36px);
     height: 190px;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
     display: block;
     margin: -18px -18px 18px -18px;
     border-radius: 10px;
 }
-/* ================= EXPERIENCE ================= */
+```
 
-.experience-section {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 80px 20px;
-}
-
-.section-heading {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.section-heading h1 {
-    font-size: 38px;
-    color: #111827;
-    margin-bottom: 10px;
-}
-
-.section-heading p {
-    color: #6b7280;
-    font-size: 16px;
-}
-
-.experience-card {
-    background: #ffffff;
-    padding: 32px;
-    margin-bottom: 28px;
-    border-radius: 16px;
-    border-left: 5px solid #2563eb;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.experience-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
-}
-
-.experience-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-    margin-bottom: 18px;
-}
-
-.experience-top h2 {
-    font-size: 23px;
-    color: #111827;
-    margin-bottom: 6px;
-}
-
-.experience-top h3 {
-    font-size: 16px;
-    font-weight: 500;
-    color: #2563eb;
-}
-
-.experience-date {
-    background: #eff6ff;
-    color: #2563eb;
-    padding: 7px 15px;
-    border-radius: 20px;
-    font-size: 13px;
-    white-space: nowrap;
-}
-
-.experience-intro {
-    color: #4b5563;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-.experience-card h4 {
-    color: #111827;
-    margin-bottom: 10px;
-}
-
-.experience-card ul {
-    padding-left: 20px;
-    margin-bottom: 22px;
-}
-
-.experience-card li {
-    color: #4b5563;
-    line-height: 1.8;
-    margin-bottom: 6px;
-}
-
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.skills span {
-    background: #eff6ff;
-    color: #2563eb;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 12px;
-}
-
-@media (max-width: 600px) {
-
-    .experience-top {
-        flex-direction: column;
-    }
-
-    .experience-card {
-        padding: 24px;
-    }
-
-    .section-heading h1 {
-        font-size: 32px;
-    }
-
-}
