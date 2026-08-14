@@ -1047,3 +1047,178 @@ header .nav-links a.active {
         padding: 35px 20px 18px;
     }
 }
+   /* =====================================================
+   ABOUT PAGE
+===================================================== */
+
+.about {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 75px 0 35px;
+}
+
+.about-content {
+    background: #ffffff;
+
+    border: 1px solid #dbeafe;
+    border-left: 4px solid #2563eb;
+
+    border-radius: 15px;
+
+    padding: 40px;
+
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.08);
+}
+
+.about-content h1 {
+    color: #2563eb;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.about-content p {
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+.about-content strong {
+    color: #111827;
+}
+
+
+/* =====================================================
+   EDUCATION
+===================================================== */
+
+.education {
+    width: 90%;
+    max-width: 1000px;
+    margin: 45px auto;
+}
+
+.education h2,
+.skills-section h2 {
+    text-align: center;
+
+    font-size: 36px;
+    color: #0f172a;
+
+    margin-bottom: 30px;
+}
+
+.education .info-box {
+    max-width: 700px;
+    margin: 0 auto;
+
+    text-align: center;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #dbeafe;
+    border-radius: 15px;
+
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.08);
+}
+
+.education .info-box h3 {
+    color: #2563eb;
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.education .info-box p {
+    color: #475569;
+}
+
+
+/* =====================================================
+   TECHNICAL SKILLS
+===================================================== */
+
+.skills-section {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 60px auto 80px;
+
+    text-align: center;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+.skill-container span {
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    border: 1px solid #dbeafe;
+
+    padding: 9px 17px;
+
+    border-radius: 25px;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+.skill-container span:hover {
+    background: #2563eb;
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   ABOUT MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .about {
+        padding: 50px 0 25px;
+    }
+
+    .about-content {
+        padding: 25px;
+    }
+
+    .about-content h1 {
+        font-size: 32px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+
+    .education h2,
+    .skills-section h2 {
+        font-size: 30px;
+    }
+
+    .education .info-box {
+        padding: 25px 20px;
+    }
+
+    .skill-container {
+        gap: 8px;
+    }
+
+    .skill-container span {
+        font-size: 12px;
+        padding: 8px 13px;
+    }
+}
