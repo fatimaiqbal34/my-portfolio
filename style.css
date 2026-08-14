@@ -398,27 +398,35 @@ footer a:hover{
 }
 
 
-/* Front Page Project Images */
+/* ================= FRONT PAGE PROJECT IMAGES ================= */
 
 .featured-project-image {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
+    height: 260px;
+    object-fit: contain;
     object-position: center;
-    border-radius: 10px;
-    margin-bottom: 15px;
     display: block;
+    margin: 0 auto 15px auto;
+    border-radius: 10px;
 }
 
 
-/* Project Page Images */
+/* ================= PROJECT PAGE IMAGES ================= */
 
 .project-card-image {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
+    height: 260px;
+    object-fit: contain;
     object-position: center;
-    border-radius: 10px;
-    margin-bottom: 15px;
     display: block;
+    margin: 0 auto 15px auto;
+    border-radius: 10px;
+}
+
+
+/* Keep images inside cards */
+
+.card,
+.project-card {
+    overflow: hidden;
 }
