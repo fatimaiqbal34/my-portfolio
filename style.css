@@ -398,34 +398,38 @@ footer a:hover{
 }
 
 
-/* ================= FRONT PAGE PROJECT IMAGES ================= */
+/* ================= PROJECT IMAGES ================= */
 
-.featured-project-image {
-    width: 92%;
-    height: 230px;
-    object-fit: contain;
-    object-position: center;
-    display: block;
-    margin: 0 auto 10px auto;
-    border-radius: 10px;
-}
+/* Front Page */
 
-
-/* ================= PROJECT PAGE IMAGES ================= */
-
-.project-card-image {
-    width: 92%;
-    height: 230px;
-    object-fit: contain;
-    object-position: center;
-    display: block;
-    margin: 0 auto 10px auto;
-    border-radius: 10px;
-}
 .card {
     padding: 18px;
+    overflow: hidden;
 }
 
-.card .featured-project-image {
-    margin-top: 0;
+.featured-project-image {
+    width: calc(100% + 36px);
+    height: 190px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: -18px -18px 18px -18px;
+    border-radius: 10px;
+}
+
+
+/* Projects Page */
+
+.project-card {
+    overflow: hidden;
+}
+
+.project-card-image {
+    width: calc(100% + 36px);
+    height: 190px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: -18px -18px 18px -18px;
+    border-radius: 10px;
 }
