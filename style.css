@@ -1209,3 +1209,253 @@ header .nav-links a.active {
         gap: 13px;
     }
 }
+/* =====================================================
+   FINAL FIXES - ALL PAGES
+===================================================== */
+
+
+/* ================= SAME FOOTER ON ALL PAGES ================= */
+
+footer,
+.experience-footer {
+    width: 100%;
+    background: #141725 !important;
+    color: #ffffff !important;
+
+    padding: 42px 8% 20px;
+    margin-top: 40px;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+footer p,
+.experience-footer p {
+    color: #ffffff !important;
+    text-align: center;
+    line-height: 1.7;
+}
+
+footer h2,
+footer h3,
+.experience-footer h2,
+.experience-footer h3 {
+    color: #ffffff !important;
+}
+
+footer a,
+.experience-footer a {
+    color: #8fa7ff !important;
+    text-decoration: none;
+}
+
+footer a:hover,
+.experience-footer a:hover {
+    color: #ffffff !important;
+}
+
+
+/* Footer bottom */
+
+.experience-footer .footer-bottom {
+    width: 100%;
+    max-width: 1000px;
+    margin: 25px auto 0;
+    padding-top: 15px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+    text-align: center;
+}
+
+.experience-footer .footer-bottom p {
+    color: #9ca8bb !important;
+}
+
+
+/* =====================================================
+   EXPERIENCE HEADING
+===================================================== */
+
+.experience-section .section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.experience-section .section-heading h1 {
+    color: #ffffff !important;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.experience-section .section-heading p {
+    color: #9ca3b2 !important;
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   EXPERIENCE CARDS
+   Same theme as other project cards
+===================================================== */
+
+.experience-card {
+    background: #25293d !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.10) !important;
+    border-left: 4px solid #667eea !important;
+
+    color: #cbd5e1;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.20);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* IMPORTANT:
+   Cursor par card BLUE nahi hoga */
+
+.experience-card:hover {
+    background: #25293d !important;
+
+    border-left-color: #667eea !important;
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =====================================================
+   EXPERIENCE CARD TEXT
+   Not everything white
+===================================================== */
+
+.experience-top h2 {
+    color: #ffffff !important;
+}
+
+.experience-top h3 {
+    color: #667eea !important;
+}
+
+.experience-intro {
+    color: #c1c9d6 !important;
+}
+
+.experience-card h4 {
+    color: #e5e7eb !important;
+}
+
+.experience-card li {
+    color: #aeb7c7 !important;
+}
+
+
+/* =====================================================
+   EXPERIENCE DATE
+===================================================== */
+
+.experience-date {
+    background: rgba(102, 126, 234, 0.12) !important;
+    color: #aeb9ff !important;
+
+    border: 1px solid rgba(102, 126, 234, 0.18);
+}
+
+
+/* =====================================================
+   EXPERIENCE SKILLS
+===================================================== */
+
+.experience-card .skills span {
+    background: rgba(102, 126, 234, 0.10) !important;
+
+    color: #aeb9ff !important;
+
+    border: 1px solid rgba(102, 126, 234, 0.18);
+
+    transition: 0.25s ease;
+}
+
+
+/* Skill hover bhi blue solid nahi hoga */
+
+.experience-card .skills span:hover {
+    background: rgba(102, 126, 234, 0.16) !important;
+    color: #c5ceff !important;
+}
+
+
+/* =====================================================
+   EXPERIENCE CARD - NO BLUE TEXT ON HOVER
+===================================================== */
+
+.experience-card:hover h2 {
+    color: #ffffff !important;
+}
+
+.experience-card:hover h3 {
+    color: #667eea !important;
+}
+
+.experience-card:hover p,
+.experience-card:hover li {
+    color: #c1c9d6 !important;
+}
+
+
+/* =====================================================
+   NORMAL BODY TEXT
+   Keep same visual hierarchy as other pages
+===================================================== */
+
+body {
+    color: #cbd5e1;
+}
+
+p {
+    color: #aeb7c7;
+}
+
+
+/* Headings remain strong */
+
+h1,
+h2 {
+    color: #ffffff;
+}
+
+h3 {
+    color: #667eea;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .experience-section .section-heading h1 {
+        font-size: 34px;
+    }
+
+    .experience-section .section-heading p {
+        font-size: 14px;
+    }
+
+    footer,
+    .experience-footer {
+        padding: 35px 20px 18px;
+    }
+}
