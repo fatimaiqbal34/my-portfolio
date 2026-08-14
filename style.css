@@ -398,22 +398,24 @@ footer a:hover{
 }
 
 
-/* Project Card Images */
+/* Front Page Project Images */
 
-.project-card-image {
+.featured-project-image {
     width: 100%;
-    height: 140px;
-    object-fit: cover;
+    height: 150px;
+    object-fit: contain;
     border-radius: 10px;
     margin-bottom: 15px;
     display: block;
 }
-/* Featured Project Images */
 
-.featured-project-image {
+
+/* Project Page Images */
+
+.project-card-image {
     width: 100%;
-    height: 140px;
-    object-fit: cover;
+    height: 150px;
+    object-fit: contain;
     border-radius: 10px;
     margin-bottom: 15px;
     display: block;
