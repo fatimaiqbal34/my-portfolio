@@ -1166,3 +1166,79 @@ footer .footer-bottom {
     margin-top: 25px;
     padding-top: 15px;
 }
+/* =====================================================
+   ALL PAGES - BLACK HEADER & FOOTER
+===================================================== */
+
+/* ================= HEADER ================= */
+
+header {
+    background: #000000 !important;
+    color: #ffffff !important;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.20);
+}
+
+header .logo {
+    color: #ffffff !important;
+}
+
+header nav ul li a,
+header .nav-links a {
+    color: #ffffff !important;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active,
+header .nav-links a:hover,
+header .nav-links a.active {
+    color: #ffffff !important;
+}
+
+
+/* ================= ALL FOOTERS ================= */
+
+footer,
+.experience-footer {
+    background: #000000 !important;
+    color: #ffffff !important;
+
+    border-top: 1px solid #333333 !important;
+}
+
+
+/* Footer text */
+
+footer p,
+footer h2,
+footer h3,
+footer h4,
+footer span,
+.experience-footer p,
+.experience-footer h2,
+.experience-footer h3,
+.experience-footer h4,
+.experience-footer span {
+    color: #ffffff !important;
+}
+
+
+/* Footer links */
+
+footer a,
+.experience-footer a {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+footer a:hover,
+.experience-footer a:hover {
+    color: #d1d5db !important;
+}
+
+
+/* Footer bottom border */
+
+footer .footer-bottom,
+.experience-footer .footer-bottom {
+    border-top: 1px solid #333333 !important;
+}
