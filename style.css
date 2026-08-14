@@ -4,16 +4,12 @@
 ===================================================== */
 
 
-/* =====================================================
-   GOOGLE FONT
-===================================================== */
+/* ================= GOOGLE FONT ================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 
-/* =====================================================
-   RESET
-===================================================== */
+/* ================= RESET ================= */
 
 * {
     margin: 0;
@@ -29,21 +25,19 @@ html {
 body {
     background: #ffffff;
     color: #111827;
-    line-height: 1.6;
 }
 
 
 /* =====================================================
-   NAVBAR - ALL PAGES
+   NAVBAR
 ===================================================== */
 
 header {
-    background: #000000;
+    background: #2563eb;
     position: sticky;
     top: 0;
     z-index: 1000;
-
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.20);
+    box-shadow: 0 3px 15px rgba(37, 99, 235, 0.20);
 }
 
 nav {
@@ -65,6 +59,9 @@ nav {
     white-space: nowrap;
 }
 
+
+/* Navigation */
+
 nav ul,
 .nav-links {
     display: flex;
@@ -77,11 +74,10 @@ nav ul,
 nav ul li a,
 .nav-links a {
     color: #ffffff;
-
     text-decoration: none;
 
-    font-size: 14px;
     font-weight: 500;
+    font-size: 14px;
 
     transition: 0.3s ease;
 }
@@ -95,7 +91,7 @@ nav ul li a.active,
 
 
 /* =====================================================
-   HERO / FRONT PAGE
+   HERO
 ===================================================== */
 
 .hero {
@@ -109,24 +105,16 @@ nav ul li a.active,
     align-items: center;
 
     gap: 60px;
-
-    text-align: left;
 }
 
 .hero-text {
     flex: 1;
-    text-align: left;
 }
 
 .hero-text h1 {
     font-size: 60px;
-    font-weight: 700;
-
     color: #0f172a;
-
     margin-bottom: 15px;
-
-    text-align: left;
 }
 
 .hero-text span {
@@ -135,25 +123,13 @@ nav ul li a.active,
 
 .hero-text h3 {
     color: #475569;
-
-    font-size: 20px;
-    font-weight: 500;
-
     margin-bottom: 20px;
-
-    text-align: left;
 }
 
 .hero-text p {
     color: #475569;
-
-    font-size: 14px;
-
     line-height: 1.8;
-
     margin-bottom: 30px;
-
-    text-align: left;
 }
 
 
@@ -173,7 +149,6 @@ nav ul li a.active,
 
     border-radius: 8px;
 
-    font-size: 14px;
     font-weight: 600;
 
     transition: 0.3s ease;
@@ -181,7 +156,6 @@ nav ul li a.active,
 
 .btn:hover {
     background: #1d4ed8;
-
     color: #ffffff;
 
     transform: translateY(-2px);
@@ -194,11 +168,8 @@ nav ul li a.active,
 
 .hero-image {
     display: flex;
-
     justify-content: center;
     align-items: center;
-
-    flex-shrink: 0;
 }
 
 .profile-circle {
@@ -211,15 +182,13 @@ nav ul li a.active,
     color: #ffffff;
 
     display: flex;
-
     justify-content: center;
     align-items: center;
 
     font-size: 90px;
-    font-weight: 700;
+    font-weight: bold;
 
-    box-shadow:
-        0 15px 30px rgba(37, 99, 235, 0.30);
+    box-shadow: 0 15px 30px rgba(37, 99, 235, 0.30);
 }
 
 
@@ -236,7 +205,6 @@ nav ul li a.active,
 .why-me {
     width: 90%;
     max-width: 1200px;
-
     margin: 80px auto;
 }
 
@@ -283,8 +251,7 @@ nav ul li a.active,
 
     padding: 18px;
 
-    box-shadow:
-        0 10px 25px rgba(37, 99, 235, 0.08);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.08);
 
     transition: 0.3s ease;
 
@@ -303,39 +270,29 @@ nav ul li a.active,
 .project-card h3,
 .project-card h2 {
     color: #2563eb;
-
-    font-size: 20px;
-    font-weight: 600;
-
     margin-bottom: 15px;
 }
 
 .card p,
 .project-card p {
     color: #475569;
-
-    font-size: 14px;
-
     line-height: 1.8;
 }
 
 
 /* =====================================================
    PROJECT IMAGES
-   NO CROPPING / NO FIXED HEIGHT
 ===================================================== */
 
 .featured-project-image,
 .project-card-image {
     width: calc(100% + 36px);
 
-    height: auto;
-
-    max-width: none;
-
     aspect-ratio: 16 / 9;
 
-    object-fit: contain;
+    height: auto;
+
+    object-fit: cover;
     object-position: center;
 
     display: block;
@@ -345,8 +302,6 @@ nav ul li a.active,
     border-radius: 10px;
 
     background: #f8fafc;
-
-    image-rendering: auto;
 }
 
 
@@ -362,7 +317,6 @@ nav ul li a.active,
     display: flex;
 
     justify-content: center;
-
     flex-wrap: wrap;
 
     gap: 30px;
@@ -396,18 +350,11 @@ nav ul li a.active,
 
 .why-card h3 {
     color: #2563eb;
-
-    font-size: 20px;
-    font-weight: 600;
-
     margin-bottom: 15px;
 }
 
 .why-card p {
     color: #475569;
-
-    font-size: 14px;
-
     line-height: 1.7;
 }
 
@@ -427,7 +374,6 @@ nav ul li a.active,
 
 .project-detail h1 {
     font-size: 42px;
-    font-weight: 600;
 
     color: #2563eb;
 
@@ -440,8 +386,6 @@ nav ul li a.active,
     margin: 0 auto 40px;
 
     color: #475569;
-
-    font-size: 14px;
 
     line-height: 1.8;
 }
@@ -467,19 +411,12 @@ nav ul li a.active,
 
 .project-box h2 {
     color: #2563eb;
-
-    font-size: 22px;
-    font-weight: 600;
-
     margin-bottom: 15px;
 }
 
 .project-box p,
 .project-box li {
     color: #475569;
-
-    font-size: 14px;
-
     line-height: 1.8;
 }
 
@@ -516,6 +453,7 @@ nav ul li a.active,
     border-radius: 25px;
 
     font-size: 13px;
+
     font-weight: 500;
 }
 
@@ -557,7 +495,6 @@ nav ul li a.active,
     background: #ffffff;
 
     border: 1px solid #dbeafe;
-
     border-left: 4px solid #2563eb;
 
     border-radius: 15px;
@@ -628,7 +565,6 @@ nav ul li a.active,
     color: #2563eb;
 
     font-size: 20px;
-    font-weight: 600;
 
     margin-bottom: 8px;
 }
@@ -687,6 +623,7 @@ nav ul li a.active,
     border-radius: 25px;
 
     font-size: 13px;
+
     font-weight: 500;
 
     transition: 0.3s ease;
@@ -725,6 +662,7 @@ nav ul li a.active,
 
 .section-heading h1 {
     font-size: 42px;
+
     font-weight: 600;
 
     color: #0f172a;
@@ -745,7 +683,7 @@ nav ul li a.active,
 }
 
 
-/* Experience container */
+/* Experience cards */
 
 .experience-container {
     display: flex;
@@ -754,9 +692,6 @@ nav ul li a.active,
 
     gap: 25px;
 }
-
-
-/* Experience card */
 
 .experience-card {
     background: #ffffff;
@@ -799,6 +734,7 @@ nav ul li a.active,
 
 .experience-top h2 {
     font-size: 21px;
+
     font-weight: 600;
 
     color: #111827;
@@ -808,6 +744,7 @@ nav ul li a.active,
 
 .experience-top h3 {
     font-size: 14px;
+
     font-weight: 500;
 
     color: #2563eb;
@@ -828,7 +765,7 @@ nav ul li a.active,
 }
 
 
-/* Experience text */
+/* Experience content */
 
 .experience-intro {
     color: #475569;
@@ -844,8 +781,6 @@ nav ul li a.active,
     color: #111827;
 
     font-size: 15px;
-
-    font-weight: 600;
 
     margin-bottom: 10px;
 }
@@ -895,59 +830,38 @@ nav ul li a.active,
 
 
 /* =====================================================
-   FOOTER - ALL PAGES
+   EXPERIENCE FOOTER
 ===================================================== */
 
-footer,
 .experience-footer {
-    background: #000000 !important;
+    background: #2563eb;
 
-    color: #ffffff !important;
+    color: #ffffff;
 
-    text-align: center;
+    padding: 42px 8% 18px;
 
-    padding: 35px 20px;
-
-    margin-top: 60px;
-
-    border-top: 1px solid #333333;
+    margin-top: 20px;
 }
 
-footer p,
-footer h2,
-footer h3,
-footer h4,
-footer span,
 .experience-footer p,
 .experience-footer h2,
-.experience-footer h3,
-.experience-footer h4,
-.experience-footer span {
-    color: #ffffff !important;
-
-    font-size: 13px;
-
-    line-height: 1.8;
+.experience-footer h3 {
+    color: #ffffff;
 }
 
-footer a,
 .experience-footer a {
-    color: #ffffff !important;
+    color: #ffffff;
 
     text-decoration: none;
 }
 
-footer a:hover,
 .experience-footer a:hover {
-    color: #d1d5db !important;
+    color: #dbeafe;
 }
 
-
-/* Footer bottom */
-
-footer .footer-bottom,
 .experience-footer .footer-bottom {
-    border-top: 1px solid #333333;
+    border-top:
+        1px solid rgba(255, 255, 255, 0.35);
 
     margin-top: 25px;
 
@@ -956,12 +870,47 @@ footer .footer-bottom,
 
 
 /* =====================================================
-   RESPONSIVE - TABLET / MOBILE
+   GENERAL FOOTER
+===================================================== */
+
+footer {
+    background: #2563eb;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+    margin-top: 60px;
+}
+
+footer p {
+    color: #ffffff;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+footer a {
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #dbeafe;
+}
+
+
+/* =====================================================
+   RESPONSIVE
 ===================================================== */
 
 @media (max-width: 768px) {
 
-    /* ================= NAVBAR ================= */
+    /* Navbar */
 
     nav {
         flex-direction: column;
@@ -990,7 +939,7 @@ footer .footer-bottom,
     }
 
 
-    /* ================= HERO ================= */
+    /* Hero */
 
     .hero {
         flex-direction: column;
@@ -998,32 +947,10 @@ footer .footer-bottom,
         text-align: center;
 
         margin: 55px auto;
-
-        gap: 40px;
-    }
-
-    .hero-text {
-        width: 100%;
-
-        text-align: center;
     }
 
     .hero-text h1 {
         font-size: 42px;
-
-        text-align: center;
-    }
-
-    .hero-text h3 {
-        font-size: 18px;
-
-        text-align: center;
-    }
-
-    .hero-text p {
-        font-size: 13px;
-
-        text-align: center;
     }
 
     .profile-circle {
@@ -1034,7 +961,7 @@ footer .footer-bottom,
     }
 
 
-    /* ================= GENERAL SECTIONS ================= */
+    /* General sections */
 
     .featured,
     .projects,
@@ -1051,7 +978,7 @@ footer .footer-bottom,
     }
 
 
-    /* ================= HEADINGS ================= */
+    /* Headings */
 
     .featured h2,
     .projects h1,
@@ -1066,7 +993,7 @@ footer .footer-bottom,
     }
 
 
-    /* ================= CARDS ================= */
+    /* Cards */
 
     .cards,
     .project-grid {
@@ -1074,21 +1001,21 @@ footer .footer-bottom,
     }
 
 
-    /* ================= PROJECT IMAGES ================= */
+    /* Project images */
 
     .featured-project-image,
     .project-card-image {
         width: calc(100% + 36px);
 
-        height: auto;
-
         aspect-ratio: 16 / 9;
 
-        object-fit: contain;
+        height: auto;
+
+        object-fit: cover;
     }
 
 
-    /* ================= ABOUT ================= */
+    /* About */
 
     .about-content {
         padding: 25px;
@@ -1105,14 +1032,14 @@ footer .footer-bottom,
     }
 
 
-    /* ================= EDUCATION ================= */
+    /* Education */
 
     .education .info-box {
         padding: 25px 20px;
     }
 
 
-    /* ================= SKILLS ================= */
+    /* Skills */
 
     .skill-container {
         gap: 8px;
@@ -1125,7 +1052,7 @@ footer .footer-bottom,
     }
 
 
-    /* ================= EXPERIENCE ================= */
+    /* Experience */
 
     .experience-card {
         padding: 24px;
@@ -1141,8 +1068,12 @@ footer .footer-bottom,
         align-self: flex-start;
     }
 
+    .experience-footer {
+        padding: 35px 20px 18px;
+    }
 
-    /* ================= PROJECT BUTTONS ================= */
+
+    /* Buttons */
 
     .project-buttons {
         flex-direction: column;
@@ -1155,12 +1086,83 @@ footer .footer-bottom,
 
         min-width: auto;
     }
+}
+/* =====================================================
+   FOOTER - FINAL FIX
+===================================================== */
+
+footer {
+    background: #2563eb;
+    color: #ffffff;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+    margin-top: 60px;
+
+    border-top: 1px solid #1d4ed8;
+}
+
+footer p {
+    color: #ffffff;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+footer a {
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #dbeafe;
+}
 
 
-    /* ================= FOOTER ================= */
+/* Footer bottom border */
+footer .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.35);
 
-    footer,
-    .experience-footer {
-        padding: 30px 20px;
-    }
+    margin-top: 25px;
+
+    padding-top: 15px;
+}
+/* =====================================================
+   EXPERIENCE FOOTER - BLUE FIX
+===================================================== */
+
+.experience-footer {
+    background: #2563eb !important;
+    color: #ffffff !important;
+
+    padding: 42px 8% 18px;
+    margin-top: 20px;
+
+    border-top: 1px solid #1d4ed8;
+}
+
+.experience-footer p,
+.experience-footer h2,
+.experience-footer h3,
+.experience-footer span {
+    color: #ffffff !important;
+}
+
+.experience-footer a {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+.experience-footer a:hover {
+    color: #dbeafe !important;
+}
+
+.experience-footer .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.35) !important;
+    margin-top: 25px;
+    padding-top: 15px;
 }
