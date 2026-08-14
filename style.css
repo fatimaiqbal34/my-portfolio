@@ -1131,3 +1131,38 @@ footer .footer-bottom {
 
     padding-top: 15px;
 }
+/* =====================================================
+   EXPERIENCE FOOTER - BLUE FIX
+===================================================== */
+
+.experience-footer {
+    background: #2563eb !important;
+    color: #ffffff !important;
+
+    padding: 42px 8% 18px;
+    margin-top: 20px;
+
+    border-top: 1px solid #1d4ed8;
+}
+
+.experience-footer p,
+.experience-footer h2,
+.experience-footer h3,
+.experience-footer span {
+    color: #ffffff !important;
+}
+
+.experience-footer a {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+.experience-footer a:hover {
+    color: #dbeafe !important;
+}
+
+.experience-footer .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.35) !important;
+    margin-top: 25px;
+    padding-top: 15px;
+}
