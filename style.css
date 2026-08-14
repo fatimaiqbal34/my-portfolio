@@ -401,12 +401,12 @@ footer a:hover{
 /* ================= FRONT PAGE PROJECT IMAGES ================= */
 
 .featured-project-image {
-    width: 100%;
-    height: 260px;
+    width: 92%;
+    height: 230px;
     object-fit: contain;
     object-position: center;
     display: block;
-    margin: 0 auto 15px auto;
+    margin: 0 auto 10px auto;
     border-radius: 10px;
 }
 
@@ -414,19 +414,18 @@ footer a:hover{
 /* ================= PROJECT PAGE IMAGES ================= */
 
 .project-card-image {
-    width: 100%;
-    height: 260px;
+    width: 92%;
+    height: 230px;
     object-fit: contain;
     object-position: center;
     display: block;
-    margin: 0 auto 15px auto;
+    margin: 0 auto 10px auto;
     border-radius: 10px;
 }
+.card {
+    padding: 18px;
+}
 
-
-/* Keep images inside cards */
-
-.card,
-.project-card {
-    overflow: hidden;
+.card .featured-project-image {
+    margin-top: 0;
 }
