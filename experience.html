@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,18 +11,24 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
     <style>
 
-        /* ================= EXPERIENCE PAGE ================= */
+        /* =====================================================
+           EXPERIENCE PAGE
+        ===================================================== */
 
         .experience-section {
             max-width: 1050px;
             margin: 0 auto;
             padding: 80px 25px;
         }
+
+
+        /* ================= HEADING ================= */
 
         .section-heading {
             text-align: center;
@@ -33,17 +38,20 @@
         .section-heading h1 {
             font-size: 42px;
             font-weight: 700;
-            color: #111827;
+            color: #ffffff;
             margin-bottom: 12px;
         }
 
         .section-heading p {
             font-size: 16px;
-            color: #6b7280;
+            color: #9ca3af;
             max-width: 650px;
             margin: auto;
             line-height: 1.7;
         }
+
+
+        /* ================= EXPERIENCE CONTAINER ================= */
 
         .experience-container {
             display: flex;
@@ -51,24 +59,40 @@
             gap: 28px;
         }
 
+
+        /* ================= EXPERIENCE CARD ================= */
+
         .experience-card {
-            background: #ffffff;
+            background: #25293d;
             padding: 32px;
             border-radius: 18px;
-            border-left: 5px solid #2563eb;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-left: 5px solid #667eea;
+
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
             transition: 0.3s ease;
         }
 
         .experience-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 14px 35px rgba(0, 0, 0, 0.10);
+
+            background: #25293d;
+
+            border-left-color: #667eea;
+
+            box-shadow: 0 14px 35px rgba(0, 0, 0, 0.22);
         }
+
+
+        /* ================= CARD TOP ================= */
 
         .experience-top {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
+
             gap: 20px;
             margin-bottom: 18px;
         }
@@ -76,139 +100,214 @@
         .experience-top h2 {
             font-size: 24px;
             font-weight: 600;
-            color: #111827;
+
+            color: #ffffff;
+
             margin-bottom: 6px;
         }
 
         .experience-top h3 {
             font-size: 16px;
             font-weight: 500;
-            color: #2563eb;
+
+            color: #667eea;
         }
+
+
+        /* ================= DATE ================= */
 
         .experience-date {
-            background: #eff6ff;
-            color: #2563eb;
+            background: rgba(102, 126, 234, 0.12);
+
+            color: #aeb9ff;
+
             padding: 7px 15px;
+
             border-radius: 20px;
+
             font-size: 13px;
             font-weight: 500;
+
             white-space: nowrap;
+
+            border: 1px solid rgba(102, 126, 234, 0.15);
         }
 
+
+        /* ================= DESCRIPTION ================= */
+
         .experience-intro {
-            color: #4b5563;
+            color: #c1c9d6;
+
             font-size: 15px;
+
             line-height: 1.8;
+
             margin-bottom: 20px;
         }
 
+
+        /* ================= KEY CONTRIBUTIONS ================= */
+
         .experience-card h4 {
             font-size: 16px;
-            color: #111827;
+
+            color: #e5e7eb;
+
             margin-bottom: 12px;
         }
 
         .experience-card ul {
             padding-left: 20px;
+
             margin-bottom: 22px;
         }
 
         .experience-card li {
-            color: #4b5563;
+            color: #aeb7c7;
+
             font-size: 14px;
+
             line-height: 1.8;
+
             margin-bottom: 7px;
         }
 
+
+        /* ================= SKILLS ================= */
+
         .skills {
             display: flex;
+
             flex-wrap: wrap;
+
             gap: 8px;
         }
 
         .skills span {
-            background: #eff6ff;
-            color: #2563eb;
+            background: rgba(102, 126, 234, 0.10);
+
+            color: #aeb9ff;
+
             padding: 6px 13px;
+
             border-radius: 20px;
+
             font-size: 12px;
+
             font-weight: 500;
+
+            border: 1px solid rgba(102, 126, 234, 0.15);
         }
 
-        /* ================= FOOTER ================= */
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
 
         .experience-footer {
-            background: #111827;
-            color: #ffffff;
-            padding: 45px 8% 20px;
+            width: 100%;
+
+            background: #111827 !important;
+
+            color: #ffffff !important;
+
+            padding: 42px 20px 25px;
+
             margin-top: 30px;
+
+            text-align: center;
+
+            /* END LINE REMOVED */
+            border: none !important;
+            border-top: none !important;
+            border-bottom: none !important;
         }
+
+
+        /* Footer content completely centered */
 
         .footer-content {
             max-width: 1100px;
-            margin: auto;
+
+            margin: 0 auto;
+
             display: flex;
-            justify-content: space-between;
-            gap: 40px;
-            flex-wrap: wrap;
-        }
 
-        .footer-content h2 {
-            font-size: 22px;
-            margin-bottom: 8px;
-        }
+            flex-direction: column;
 
-        .footer-content p {
-            color: #d1d5db;
-            font-size: 14px;
-            line-height: 1.7;
-        }
+            justify-content: center;
 
-        .footer-email {
-            margin-top: 10px;
-        }
-
-        .footer-email a {
-            color: #60a5fa;
-            text-decoration: none;
-        }
-
-        .footer-email a:hover {
-            text-decoration: underline;
-        }
-
-        .footer-links {
-            display: flex;
-            gap: 22px;
             align-items: center;
-        }
 
-        .footer-links a {
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 14px;
-            transition: 0.3s ease;
-        }
+            gap: 15px;
 
-        .footer-links a:hover {
-            color: #60a5fa;
-        }
-
-        .footer-bottom {
-            max-width: 1100px;
-            margin: 30px auto 0;
-            padding-top: 18px;
-            border-top: 1px solid #374151;
             text-align: center;
         }
 
-        .footer-bottom p {
-            font-size: 13px;
-            color: #9ca3af;
+
+        .footer-content p {
+            color: #d1d5db;
+
+            font-size: 14px;
+
+            line-height: 1.7;
+
+            text-align: center;
         }
 
-        /* ================= RESPONSIVE ================= */
+
+        .footer-email {
+            margin-top: 5px;
+        }
+
+
+        .footer-email a {
+            color: #8fa7ff;
+
+            text-decoration: none;
+        }
+
+
+        .footer-email a:hover {
+            color: #ffffff;
+        }
+
+
+        /* ================= FOOTER LINKS ================= */
+
+        .footer-links {
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            gap: 25px;
+
+            margin-top: 5px;
+        }
+
+
+        .footer-links a {
+            color: #ffffff;
+
+            text-decoration: none;
+
+            font-size: 14px;
+
+            transition: 0.3s ease;
+        }
+
+
+        .footer-links a:hover {
+            color: #8fa7ff;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
 
         @media (max-width: 700px) {
 
@@ -228,48 +327,77 @@
                 flex-direction: column;
             }
 
-            .footer-content {
-                flex-direction: column;
+            .experience-footer {
+                padding: 35px 20px 25px;
             }
 
             .footer-links {
                 flex-wrap: wrap;
+
+                justify-content: center;
             }
         }
 
     </style>
 </head>
 
+
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+
+    <!-- =====================================================
+         NAVBAR
+    ===================================================== -->
 
     <header>
+
         <nav class="navbar">
 
-            <h2 class="logo">Fatima Iqbal</h2>
+            <h2 class="logo">
+                Fatima Iqbal
+            </h2>
 
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="projects.html">Projects</a>
-                <a href="experience.html" class="active">Experience</a>
-                
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="experience.html" class="active">
+                    Experience
+                </a>
+
             </div>
 
         </nav>
+
     </header>
 
 
-    <!-- ================= EXPERIENCE ================= -->
+    <!-- =====================================================
+         EXPERIENCE
+    ===================================================== -->
 
     <main>
 
         <section class="experience-section">
 
+
+            <!-- HEADING -->
+
             <div class="section-heading">
 
-                <h1>Experience</h1>
+                <h1>
+                    Experience
+                </h1>
 
                 <p>
                     Professional and research experience in Data Science,
@@ -282,30 +410,49 @@
             <div class="experience-container">
 
 
-                <!-- ================= FLYRANK ================= -->
+                <!-- =================================================
+                     FLYRANK
+                ================================================= -->
 
                 <div class="experience-card">
 
                     <div class="experience-top">
 
                         <div>
-                            <h2>Machine Learning Intern</h2>
-                            <h3>FlyRank AI</h3>
+
+                            <h2>
+                                Machine Learning Intern
+                            </h2>
+
+                            <h3>
+                                FlyRank AI
+                            </h3>
+
                         </div>
 
-                        <span class="experience-date">2026</span>
+                        <span class="experience-date">
+                            2026
+                        </span>
 
                     </div>
 
+
                     <p class="experience-intro">
+
                         Worked on practical Data Science and Machine Learning
                         tasks involving exploratory data analysis, feature
                         engineering, model development, and model evaluation.
+
                     </p>
 
-                    <h4>Key Contributions</h4>
+
+                    <h4>
+                        Key Contributions
+                    </h4>
+
 
                     <ul>
+
                         <li>
                             Performed Exploratory Data Analysis (EDA) to identify
                             patterns and relationships in data.
@@ -330,9 +477,12 @@
                             Worked with Python, Pandas, Scikit-learn, and
                             machine learning workflows.
                         </li>
+
                     </ul>
 
+
                     <div class="skills">
+
                         <span>Python</span>
                         <span>Pandas</span>
                         <span>Scikit-learn</span>
@@ -340,35 +490,52 @@
                         <span>EDA</span>
                         <span>Feature Engineering</span>
                         <span>Model Evaluation</span>
+
                     </div>
 
                 </div>
 
 
-                <!-- ================= RESEARCH ================= -->
+                <!-- =================================================
+                     RESEARCH ASSISTANT
+                ================================================= -->
 
                 <div class="experience-card">
 
                     <div class="experience-top">
 
                         <div>
-                            <h2>Research Assistant</h2>
+
+                            <h2>
+                                Research Assistant
+                            </h2>
+
                             <h3>
                                 Data Science & Machine Learning — KFUEIT
                             </h3>
+
                         </div>
 
-                        <span class="experience-date">Research</span>
+                        <span class="experience-date">
+                            Research
+                        </span>
 
                     </div>
 
+
                     <p class="experience-intro">
+
                         Supported research activities in Data Science and
                         Machine Learning, with a focus on data analysis,
                         experimentation, and machine learning techniques.
+
                     </p>
 
-                    <h4>Key Contributions</h4>
+
+                    <h4>
+                        Key Contributions
+                    </h4>
+
 
                     <ul>
 
@@ -399,7 +566,9 @@
 
                     </ul>
 
+
                     <div class="skills">
+
                         <span>Python</span>
                         <span>Data Science</span>
                         <span>Machine Learning</span>
@@ -407,71 +576,7 @@
                         <span>Data Preprocessing</span>
                         <span>Model Evaluation</span>
                         <span>Research</span>
-                    </div>
 
-                </div>
-
-
-                <!-- ================= AI SOFTWARE ENGINEERING ================= -->
-
-                <div class="experience-card">
-
-                    <div class="experience-top">
-
-                        <div>
-                            <h2>AI Software Engineer</h2>
-                            <h3>AI & Agentic Systems — Project Development</h3>
-                        </div>
-
-                        <span class="experience-date">2026</span>
-
-                    </div>
-
-                    <p class="experience-intro">
-                        Developed practical AI-powered applications and
-                        intelligent software solutions using modern AI
-                        technologies and agent-based workflows.
-                    </p>
-
-                    <h4>Key Contributions</h4>
-
-                    <ul>
-
-                        <li>
-                            Developed AI-powered applications focused on
-                            practical problem solving and automation.
-                        </li>
-
-                        <li>
-                            Worked with LLMs, AI Agents, RAG, MCP,
-                            and vector databases.
-                        </li>
-
-                        <li>
-                            Built intelligent workflows for information
-                            retrieval and task automation.
-                        </li>
-
-                        <li>
-                            Integrated APIs, tools, and document-processing
-                            workflows into AI applications.
-                        </li>
-
-                        <li>
-                            Applied Python and backend technologies to
-                            develop AI-driven software solutions.
-                        </li>
-
-                    </ul>
-
-                    <div class="skills">
-                        <span>Python</span>
-                        <span>AI Agents</span>
-                        <span>LLMs</span>
-                        <span>RAG</span>
-                        <span>MCP</span>
-                        <span>Vector Databases</span>
-                        <span>FastAPI</span>
                     </div>
 
                 </div>
@@ -484,48 +589,51 @@
     </main>
 
 
-    <!-- ================= FOOTER ================= -->
+    <!-- =====================================================
+         FOOTER
+    ===================================================== -->
 
     <footer class="experience-footer">
 
         <div class="footer-content">
 
-            <div>
 
-               
+            <p>
+                AI Software Engineer | Data Scientist |
+                Machine Learning
+            </p>
 
-                <p>
-                    AI Software Engineer | Data Scientist |
-                    Machine Learning
-                </p>
 
-                <p class="footer-email">
-                    <a href="mailto:fatimaiqbal3710@gmail.com">
-                        fatimaiqbal3710@gmail.com
-                    </a>
-                </p>
+            <p class="footer-email">
 
-            </div>
+                <a href="mailto:fatimaiqbal3710@gmail.com">
+                    fatimaiqbal3710@gmail.com
+                </a>
+
+            </p>
 
 
             <div class="footer-links">
 
                 <a href="https://github.com/fatimaiqbal34"
                    target="_blank">
+
                     GitHub
+
                 </a>
+
 
                 <a href="https://www.linkedin.com/in/fatima-iqbal-3062a03a8/"
                    target="_blank">
+
                     LinkedIn
+
                 </a>
 
             </div>
 
+
         </div>
-
-
-       
 
     </footer>
 
@@ -533,4 +641,3 @@
 </body>
 
 </html>
-
