@@ -1459,3 +1459,162 @@ h3 {
         padding: 35px 20px 18px;
     }
 }
+/* ================= SKILLS SLIDER ================= */
+
+.skills-section {
+    padding: 90px 0;
+    background: #f8fafc;
+    overflow: hidden;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading span {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    color: #111827;
+    margin: 8px 0;
+}
+
+.section-heading p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+
+/* Slider */
+
+.skills-slider {
+    width: 100%;
+    overflow: hidden;
+    margin: 22px 0;
+    position: relative;
+}
+
+.skills-track {
+    display: flex;
+    width: max-content;
+    gap: 18px;
+
+    animation: skillsMove 25s linear infinite;
+}
+
+
+/* Second row moves opposite direction */
+
+.skills-slider.reverse .skills-track {
+    animation: skillsMoveReverse 25s linear infinite;
+}
+
+
+/* Skill pill */
+
+.skill-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 14px 25px;
+
+    background: #ffffff;
+    border: 1px solid #dbeafe;
+    border-radius: 50px;
+
+    color: #1e3a8a;
+    font-size: 15px;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    box-shadow: 0 5px 20px rgba(37, 99, 235, 0.08);
+
+    transition: all 0.3s ease;
+}
+
+
+/* Hover */
+
+.skill-pill:hover {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #2563eb;
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+
+/* First row */
+
+@keyframes skillsMove {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+
+/* Second row */
+
+@keyframes skillsMoveReverse {
+
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+
+}
+
+
+/* Pause on hover */
+
+.skills-slider:hover .skills-track {
+    animation-play-state: paused;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .skills-section {
+        padding: 65px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .section-heading p {
+        padding: 0 20px;
+    }
+
+    .skill-pill {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .skills-track {
+        gap: 12px;
+        animation-duration: 20s;
+    }
+
+}
