@@ -1955,5 +1955,300 @@ h3 {
     }
 
 }
+``````css
+/* =====================================================
+   MY SKILLS
+===================================================== */
+
+.my-skills {
+    background: #ffffff;
+    padding: 100px 8%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Intro */
+
+.skills-intro {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.skills-intro span {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.skills-intro h2 {
+    color: #111827;
+    font-size: 42px;
+    font-weight: 700;
+    margin: 8px 0 10px;
+}
+
+.skills-intro p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+
+/* Timeline */
+
+.skills-timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* Center Line */
+
+.skills-timeline::before {
+    content: "";
+    position: absolute;
+
+    left: 50%;
+    top: 0;
+    bottom: 0;
+
+    width: 1px;
+
+    background: #dbeafe;
+
+    transform: translateX(-50%);
+}
+
+
+/* Skill Row */
+
+.skill-row {
+    position: relative;
+
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 80px;
+}
+
+
+/* Left */
+
+.skill-row.left {
+    justify-content: flex-end;
+
+    padding-right: 65px;
+    text-align: right;
+}
+
+
+/* Right */
+
+.skill-row.right {
+    margin-left: 50%;
+
+    padding-left: 65px;
+    text-align: left;
+}
+
+
+/* Number */
+
+.skill-number {
+    position: absolute;
+
+    width: 54px;
+    height: 54px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    border: 1px solid #bfdbfe;
+
+    color: #2563eb;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    z-index: 2;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Left number */
+
+.skill-row.left .skill-number {
+    right: -27px;
+}
+
+
+/* Right number */
+
+.skill-row.right .skill-number {
+    left: -27px;
+}
+
+
+/* Content */
+
+.skill-content {
+    max-width: 380px;
+
+    transition: all 0.35s ease;
+}
+
+
+.skill-content h3 {
+    margin: 0 0 8px;
+
+    color: #111827;
+
+    font-size: 24px;
+
+    font-weight: 600;
+
+    text-transform: capitalize;
+}
+
+
+.skill-content p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* Hover */
+
+.skill-row:hover .skill-number {
+    background: #2563eb;
+
+    color: #ffffff;
+
+    border-color: #2563eb;
+
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.22);
+
+    transform: scale(1.08);
+}
+
+
+.skill-row:hover .skill-content {
+    transform: translateY(-4px);
+}
+
+
+.skill-row:hover h3 {
+    color: #2563eb;
+}
+
+
+/* Small blue line */
+
+.skill-content::after {
+    content: "";
+
+    display: block;
+
+    width: 35px;
+    height: 2px;
+
+    background: #2563eb;
+
+    margin-top: 15px;
+
+    transition: width 0.3s ease;
+}
+
+
+.skill-row.left .skill-content::after {
+    margin-left: auto;
+}
+
+
+.skill-row:hover .skill-content::after {
+    width: 65px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .my-skills {
+        padding: 75px 25px;
+    }
+
+    .skills-intro {
+        margin-bottom: 55px;
+    }
+
+    .skills-intro h2 {
+        font-size: 34px;
+    }
+
+
+    .skills-timeline::before {
+        left: 25px;
+    }
+
+
+    .skill-row,
+    .skill-row.right,
+    .skill-row.left {
+
+        width: 100%;
+
+        margin-left: 0;
+
+        padding-left: 75px;
+        padding-right: 0;
+
+        justify-content: flex-start;
+
+        text-align: left;
+
+        margin-bottom: 60px;
+    }
+
+
+    .skill-row.left .skill-number,
+    .skill-row.right .skill-number {
+
+        left: -2px;
+        right: auto;
+    }
+
+
+    .skill-content {
+        max-width: 100%;
+    }
+
+
+    .skill-content h3 {
+        font-size: 21px;
+    }
+
+
+    .skill-row.left .skill-content::after {
+        margin-left: 0;
+    }
+
+}
 ```
+
 
