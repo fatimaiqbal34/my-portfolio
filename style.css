@@ -621,40 +621,61 @@ nav ul li a.active,
 
 .education {
     width: 90%;
-    max-width: 1080px;
-
-    margin: 60px auto;
+    max-width: 1000px;
+    margin: 80px auto;
+    text-align: center;
 }
 
 .education h2 {
     text-align: center;
-
     color: var(--white);
-
     font-size: 40px;
-
-    margin-bottom: 45px;
+    font-weight: 700;
+    margin-bottom: 40px;
 }
 
 .education .info-box {
     width: 100%;
+    padding: 30px;
+    text-align: center;
+
+    background: var(--bg-card);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+    transition: 0.3s ease;
+}
+
+.education .info-box:hover {
+    transform: translateY(-5px);
+
+    background: var(--bg-card-hover);
+
+    border-color: rgba(102, 126, 234, 0.35);
+
+    box-shadow: var(--shadow-blue);
 }
 
 .education .info-box h3 {
-    color: var(--white);
+    color: var(--primary);
 
-    font-size: 17px;
+    font-size: 22px;
 
-    margin-bottom: 3px;
+    font-weight: 600;
+
+    margin-bottom: 8px;
 }
 
 .education .info-box p {
     color: var(--text-light);
 
-    font-size: 14px;
+    font-size: 15px;
+
+    margin: 0;
 }
-
-
 /* =====================================================
    TECHNICAL SKILLS - ABOUT PAGE
 ===================================================== */
