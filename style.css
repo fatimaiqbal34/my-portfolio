@@ -224,20 +224,54 @@ nav ul li a.active,
     gap: 14px;
     align-items: center;
     justify-content: flex-start;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .hero-buttons .btn {
     white-space: nowrap;
-    min-height: 44px;
-    min-width: 44px;
+    padding: 13px 28px;
+    min-height: 48px;
+    min-width: 120px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+/* Primary Button (View Projects) */
+.hero-buttons .btn-primary {
+    background: #667eea;
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.25);
+}
+
+.hero-buttons .btn-primary:hover {
+    background: #586ed8;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(102, 126, 234, 0.35);
+}
+
+/* Secondary Button (Download CV, Book Meeting) */
+.hero-buttons .btn-secondary {
+    background: transparent;
+    color: #ffffff;
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+}
+
+.hero-buttons .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #667eea;
+    transform: translateY(-3px);
 }
 
 
-/* ================= BUTTON ================= */
+/* ================= GENERAL BUTTON ================= */
 
 .btn {
     display: inline-block;
@@ -1124,6 +1158,12 @@ footer a:hover {
         justify-content: center;
     }
 
+    .hero-buttons .btn {
+        padding: 12px 22px;
+        font-size: 13px;
+        min-width: 100px;
+    }
+
     .featured,
     .projects,
     .about,
@@ -1247,6 +1287,7 @@ footer a:hover {
     .hero-buttons .btn {
         font-size: 12px;
         padding: 10px 16px;
+        min-width: 80px;
         min-height: 44px;
     }
 
@@ -1564,6 +1605,8 @@ section.education .info-box p {
         padding: 14px 20px;
     }
 }
+
+
 /* =====================================================
    FIX - AUTOCOMPLETE / SUGGESTION BACKGROUND
 ===================================================== */
@@ -1591,87 +1634,4 @@ textarea:-moz-autofill {
     background-color: #1d2032 !important;
     color: #e5e7eb !important;
     border-color: #667eea !important;
-}
-/* =====================================================
-   HERO BUTTONS - FIXED
-===================================================== */
-
-.hero-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 15px;
-}
-
-.hero-buttons .btn {
-    white-space: nowrap;
-    padding: 13px 28px;
-    min-height: 48px;
-    min-width: 120px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    font-weight: 600;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-/* Primary Button (View Projects) */
-.hero-buttons .btn-primary {
-    background: #667eea;
-    color: #ffffff;
-    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.25);
-}
-
-.hero-buttons .btn-primary:hover {
-    background: #586ed8;
-    transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(102, 126, 234, 0.35);
-}
-
-/* Secondary Button (Download CV, Book Meeting) */
-.hero-buttons .btn-secondary {
-    background: transparent;
-    color: #ffffff;
-    border: 1.5px solid rgba(255, 255, 255, 0.25);
-}
-
-.hero-buttons .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: #667eea;
-    transform: translateY(-3px);
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-    .hero-buttons {
-        justify-content: center;
-        gap: 12px;
-    }
-    
-    .hero-buttons .btn {
-        padding: 12px 22px;
-        font-size: 13px;
-        min-width: 100px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-buttons {
-        gap: 10px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .hero-buttons .btn {
-        padding: 10px 18px;
-        font-size: 12px;
-        min-width: 80px;
-        min-height: 44px;
-    }
 }
