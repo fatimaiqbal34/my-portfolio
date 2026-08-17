@@ -697,6 +697,8 @@ nav ul li a.active,
 
     margin: 0;
 }
+
+
 /* =====================================================
    TECHNICAL SKILLS - ABOUT PAGE
 ===================================================== */
@@ -1267,6 +1269,8 @@ footer a:hover {
         font-size: 12px;
     }
 }
+
+
 /* =====================================================
    FINAL EDUCATION CENTER FIX
 ===================================================== */
@@ -1342,170 +1346,10 @@ section.education .info-box p {
 
     color: var(--text-light) !important;
 }
+
+
 /* =====================================================
-   CONTACT FORM
-===================================================== */
-
-.contact-section {
-    width: 90%;
-    max-width: 900px;
-
-    margin: 90px auto;
-
-    padding: 50px 40px;
-
-    background: var(--bg-card);
-
-    border: 1px solid var(--border);
-
-    border-radius: var(--radius);
-
-    box-shadow: var(--shadow);
-
-    text-align: center;
-}
-
-.contact-container h2 {
-    color: var(--white);
-
-    font-size: 38px;
-
-    margin-bottom: 12px;
-}
-
-.contact-container > p {
-    color: var(--text-muted);
-
-    font-size: 15px;
-
-    margin-bottom: 35px;
-}
-
-.contact-container form {
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 20px;
-
-    text-align: left;
-}
-
-.form-group {
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 8px;
-}
-
-.form-group label {
-    color: var(--white);
-
-    font-size: 14px;
-
-    font-weight: 500;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-
-    padding: 14px 16px;
-
-    background: var(--bg-dark);
-
-    color: var(--white);
-
-    border: 1px solid var(--border);
-
-    border-radius: 10px;
-
-    outline: none;
-
-    font-size: 14px;
-
-    transition: 0.3s ease;
-
-    resize: vertical;
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-    color: var(--text-muted);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: var(--primary);
-
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.12);
-}
-
-.contact-btn {
-    margin-top: 10px;
-
-    padding: 14px 25px;
-
-    background: var(--primary);
-
-    color: var(--white);
-
-    border: none;
-
-    border-radius: 8px;
-
-    font-family: 'Poppins', sans-serif;
-
-    font-size: 14px;
-
-    font-weight: 600;
-
-    cursor: pointer;
-
-    transition: 0.3s ease;
-}
-
-.contact-btn:hover {
-    background: var(--primary-dark);
-
-    transform: translateY(-3px);
-
-    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.28);
-}
-
-
-/* ================= CONTACT RESPONSIVE ================= */
-
-@media (max-width: 768px) {
-
-    .contact-section {
-        width: 90%;
-
-        padding: 35px 25px;
-
-        margin: 60px auto;
-    }
-
-    .contact-container h2 {
-        font-size: 30px;
-    }
-
-}
-
-@media (max-width: 480px) {
-
-    .contact-section {
-        padding: 30px 20px;
-    }
-
-    .contact-container h2 {
-        font-size: 26px;
-    }
-
-}
-/* =====================================================
-   CONTACT PAGE
+   CONTACT PAGE - CLEAN (SINGLE VERSION)
 ===================================================== */
 
 .contact-section {
@@ -1528,6 +1372,8 @@ section.education .info-box p {
 
     border-radius: var(--radius);
 
+    border-left: 5px solid var(--primary);
+
     box-shadow: var(--shadow);
 
     text-align: center;
@@ -1541,6 +1387,10 @@ section.education .info-box p {
     font-weight: 700;
 
     margin-bottom: 12px;
+}
+
+.contact-container h1 span {
+    color: var(--primary);
 }
 
 .contact-container > p {
@@ -1605,6 +1455,8 @@ section.education .info-box p {
     font-size: 14px;
 
     transition: 0.3s ease;
+
+    box-sizing: border-box;
 }
 
 .form-group input::placeholder,
@@ -1616,8 +1468,7 @@ section.education .info-box p {
 .form-group textarea:focus {
     border-color: var(--primary);
 
-    box-shadow:
-        0 0 0 3px rgba(102, 126, 234, 0.12);
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
 }
 
 .form-group textarea {
@@ -1629,10 +1480,10 @@ section.education .info-box p {
 
 /* ================= SEND BUTTON ================= */
 
-.contact-btn {
+.send-btn {
     width: 100%;
 
-    padding: 14px 25px;
+    padding: 16px 25px;
 
     margin-top: 5px;
 
@@ -1642,7 +1493,7 @@ section.education .info-box p {
 
     border: none;
 
-    border-radius: 8px;
+    border-radius: 10px;
 
     font-family: 'Poppins', sans-serif;
 
@@ -1652,20 +1503,52 @@ section.education .info-box p {
 
     cursor: pointer;
 
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.contact-btn:hover {
+.send-btn:hover {
     background: var(--primary-dark);
 
     transform: translateY(-3px);
 
-    box-shadow:
-        0 10px 25px rgba(102, 126, 234, 0.28);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.30);
+}
+
+.send-btn:active {
+    transform: translateY(0);
 }
 
 
-/* ================= MOBILE ================= */
+/* ================= SUCCESS MESSAGE ================= */
+
+.success-message {
+    display: none;
+
+    padding: 25px;
+
+    margin-top: 20px;
+
+    background: rgba(102, 126, 234, 0.13);
+
+    border: 1px solid var(--primary);
+
+    border-radius: 10px;
+
+    color: var(--text-light);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    text-align: center;
+}
+
+.success-message.show {
+    display: block;
+}
+
+
+/* ================= CONTACT RESPONSIVE ================= */
 
 @media (max-width: 768px) {
 
@@ -1683,6 +1566,11 @@ section.education .info-box p {
         font-size: 32px;
     }
 
+    .form-group input,
+    .form-group textarea {
+        font-size: 16px;
+        padding: 16px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1695,12 +1583,15 @@ section.education .info-box p {
         font-size: 28px;
     }
 
+    .send-btn {
+        font-size: 14px;
+        padding: 14px 20px;
+    }
 }
 
 
 /* =====================================================
    WEEK 7 FIXES - MOBILE, READABILITY, TOUCH TARGETS
-   (Added for Assignment - Everything else unchanged)
 ===================================================== */
 
 /* ===== Mobile Navigation - Better Tap Targets ===== */
@@ -1776,11 +1667,6 @@ section.education .info-box p {
         align-items: center;
         justify-content: center;
     }
-    
-    .contact-btn {
-        padding: 16px 25px;
-        min-height: 50px;
-    }
 }
 
 /* ===== Image Responsiveness ===== */
@@ -1795,17 +1681,4 @@ img {
     width: 100%;
     height: auto;
     border-radius: 12px;
-}
-
-/* ===== Form Mobile Fixes ===== */
-@media (max-width: 768px) {
-    .form-group input,
-    .form-group textarea {
-        font-size: 16px !important;
-        padding: 16px;
-    }
-    
-    .contact-container {
-        padding: 25px 18px;
-    }
 }
