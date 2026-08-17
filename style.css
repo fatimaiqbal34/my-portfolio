@@ -799,18 +799,26 @@ nav ul li a.active,
 
 footer {
     width: 100%;
-    margin-top: 70px;
-    padding: 35px 20px;
+    margin: 70px 0 0 0;
+    padding: 40px 20px;
 
-    text-align: center;
+    background: var(--bg-dark);
+    border-top: 1px solid var(--border);
+
+    text-align: center !important;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
 
-    border-top: 1px solid var(--border);
-    background: var(--bg-dark);
+footer h3,
+footer p {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center !important;
 }
 
 footer h3 {
@@ -822,8 +830,8 @@ footer h3 {
 footer p {
     color: var(--text-muted);
     font-size: 13px;
-    margin: 5px 0;
-    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 footer a {
@@ -834,8 +842,3 @@ footer a {
 footer a:hover {
     color: var(--secondary);
 }
-
-.about-content strong {
-    color: var(--white);
-}
-
