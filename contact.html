@@ -17,13 +17,12 @@
         ===================================================== */
 
         .contact-section {
+            width: 90%;
             max-width: 900px;
             margin: 0 auto;
-            padding: 80px 25px;
+            padding: 80px 25px 90px;
         }
 
-
-        /* ================= CONTACT CONTAINER ================= */
 
         .contact-container {
             max-width: 700px;
@@ -31,7 +30,7 @@
 
             background: #25293d;
 
-            padding: 40px;
+            padding: 45px;
 
             border-radius: 20px;
 
@@ -39,7 +38,7 @@
 
             border-left: 5px solid #667eea;
 
-            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.20);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
         }
 
 
@@ -61,7 +60,7 @@
         .contact-intro {
             text-align: center;
 
-            color: #9ca3af;
+            color: #9ca8bb;
 
             font-size: 15px;
 
@@ -84,8 +83,6 @@
         }
 
 
-        /* ================= FORM GROUP ================= */
-
         .form-group {
             display: flex;
 
@@ -94,8 +91,6 @@
             gap: 8px;
         }
 
-
-        /* ================= LABEL ================= */
 
         .contact-form label {
             color: #e5e7eb;
@@ -125,7 +120,7 @@
 
             border-radius: 10px;
 
-            padding: 13px 15px;
+            padding: 14px 15px;
 
             font-family: 'Poppins', sans-serif;
 
@@ -148,7 +143,7 @@
         }
 
 
-        /* ================= INPUT FOCUS ================= */
+        /* ================= FOCUS ================= */
 
         .contact-form input:focus,
         .contact-form textarea:focus {
@@ -160,11 +155,11 @@
             border-color: #667eea;
 
             box-shadow:
-                0 0 0 3px rgba(102, 126, 234, 0.12);
+                0 0 0 3px rgba(102, 126, 234, 0.15);
         }
 
 
-        /* ================= AUTOFILL FIX ================= */
+        /* ================= AUTOFILL ================= */
 
         .contact-form input:-webkit-autofill,
         .contact-form input:-webkit-autofill:hover,
@@ -186,7 +181,7 @@
 
             resize: vertical;
 
-            min-height: 150px;
+            min-height: 160px;
 
             line-height: 1.6;
         }
@@ -200,7 +195,7 @@
 
             width: 100%;
 
-            padding: 13px 20px;
+            padding: 14px 20px;
 
             margin-top: 5px;
 
@@ -214,7 +209,7 @@
 
             font-family: 'Poppins', sans-serif;
 
-            font-size: 14px;
+            font-size: 15px;
 
             font-weight: 600;
 
@@ -231,7 +226,7 @@
             transform: translateY(-2px);
 
             box-shadow:
-                0 8px 20px rgba(102, 126, 234, 0.25);
+                0 10px 25px rgba(102, 126, 234, 0.28);
         }
 
 
@@ -249,7 +244,7 @@
 
             width: 100%;
 
-            background: #111827;
+            background: #171a2a;
 
             color: #ffffff;
 
@@ -260,6 +255,8 @@
             text-align: center;
 
             box-sizing: border-box;
+
+            border-top: 1px solid rgba(255, 255, 255, 0.10);
         }
 
 
@@ -267,27 +264,27 @@
 
             color: #ffffff;
 
-            font-size: 20px;
+            font-size: 22px;
 
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
 
         footer p {
 
-            color: #d1d5db;
+            color: #9ca8bb;
 
-            font-size: 14px;
+            font-size: 13px;
 
             line-height: 1.7;
 
-            margin: 7px 0;
+            margin: 6px 0;
         }
 
 
         footer a {
 
-            color: #8fa7ff;
+            color: #667eea;
 
             text-decoration: none;
 
@@ -297,7 +294,7 @@
 
         footer a:hover {
 
-            color: #ffffff;
+            color: #8b7cf6;
         }
 
 
@@ -315,7 +312,7 @@
 
             .contact-container {
 
-                padding: 28px 22px;
+                padding: 30px 22px;
 
                 border-left-width: 4px;
             }
@@ -368,7 +365,7 @@
 
 
 <!-- =====================================================
-     HEADER / NAVBAR
+     HEADER
 ===================================================== -->
 
 <header>
@@ -379,7 +376,6 @@
             Fatima Iqbal
         </h2>
 
-
         <ul>
 
             <li>
@@ -388,13 +384,11 @@
                 </a>
             </li>
 
-
             <li>
                 <a href="about.html">
                     About
                 </a>
             </li>
-
 
             <li>
                 <a href="projects.html">
@@ -402,13 +396,11 @@
                 </a>
             </li>
 
-
             <li>
                 <a href="experience.html">
                     Experience
                 </a>
             </li>
-
 
             <li>
                 <a href="contact.html" class="active">
@@ -423,9 +415,8 @@
 </header>
 
 
-
 <!-- =====================================================
-     CONTACT SECTION
+     CONTACT
 ===================================================== -->
 
 <main>
@@ -434,24 +425,17 @@
 
         <div class="contact-container">
 
-
             <h1>
                 Get In Touch
             </h1>
 
-
             <p class="contact-intro">
-
                 Have a question, project idea, or opportunity?
                 Feel free to send me a message.
-
             </p>
 
 
-
-            <!-- =================================================
-                 FORMSPREE CONTACT FORM
-            ================================================= -->
+            <!-- ================= FORMSPREE ================= -->
 
             <form
                 action="https://formspree.io/f/xnpagvwv"
@@ -459,25 +443,13 @@
                 class="contact-form"
             >
 
-
-                <!-- CUSTOM THANK YOU PAGE -->
-
-                <input
-                    type="hidden"
-                    name="_next"
-                    value="https://fatimaiqbal34.github.io/my-portfolio/thank-you.html"
-                >
-
-
-
-                <!-- ================= NAME ================= -->
+                <!-- NAME -->
 
                 <div class="form-group">
 
                     <label for="name">
                         Your Name
                     </label>
-
 
                     <input
                         type="text"
@@ -491,15 +463,13 @@
                 </div>
 
 
-
-                <!-- ================= EMAIL ================= -->
+                <!-- EMAIL -->
 
                 <div class="form-group">
 
                     <label for="email">
                         Your Email
                     </label>
-
 
                     <input
                         type="email"
@@ -513,15 +483,13 @@
                 </div>
 
 
-
-                <!-- ================= MESSAGE ================= -->
+                <!-- MESSAGE -->
 
                 <div class="form-group">
 
                     <label for="message">
                         Your Message
                     </label>
-
 
                     <textarea
                         id="message"
@@ -534,8 +502,7 @@
                 </div>
 
 
-
-                <!-- ================= SUBMIT ================= -->
+                <!-- SUBMIT -->
 
                 <button
                     type="submit"
@@ -543,7 +510,6 @@
                 >
                     Send Message
                 </button>
-
 
             </form>
 
@@ -554,39 +520,28 @@
 </main>
 
 
-
 <!-- =====================================================
      FOOTER
 ===================================================== -->
 
 <footer>
 
-
     <h3>
         Fatima Iqbal
     </h3>
-
 
     <p>
         AI Software Engineer | AI & Machine Learning
     </p>
 
-
     <p>
-
         Email:
-
-        <a
-            href="mailto:fatimaiqbal3710@gmail.com"
-        >
+        <a href="mailto:fatimaiqbal3710@gmail.com">
             fatimaiqbal3710@gmail.com
         </a>
-
     </p>
 
-
     <p>
-
         <a
             href="https://github.com/fatimaiqbal34"
             target="_blank"
@@ -594,12 +549,9 @@
         >
             GitHub
         </a>
-
     </p>
 
-
     <p>
-
         <a
             href="https://www.linkedin.com/in/fatima-iqbal-3062a03a8/"
             target="_blank"
@@ -607,14 +559,11 @@
         >
             LinkedIn
         </a>
-
     </p>
-
 
     <p>
         © 2026 Fatima Iqbal. All Rights Reserved.
     </p>
-
 
 </footer>
 
