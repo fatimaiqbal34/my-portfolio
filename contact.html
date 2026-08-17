@@ -118,7 +118,7 @@
                     value="Fatima Iqbal Portfolio"
                 >
 
-                <!-- Redirect After Success -->
+                <!-- Redirect After Success - THANK YOU PAGE -->
                 <input
                     type="hidden"
                     name="redirect"
@@ -170,7 +170,6 @@
 
             </form>
 
-
         </div>
 
     </section>
@@ -184,6 +183,13 @@
 
 <footer>
 
+    <h3>
+        Fatima Iqbal
+    </h3>
+
+    <p>
+        AI Software Engineer | AI & Machine Learning
+    </p>
 
     <p>
         Email:
@@ -220,7 +226,7 @@
 
 
 <!-- =====================================================
-   JAVASCRIPT - AJAX SUBMISSION
+   JAVASCRIPT - AJAX SUBMISSION with REDIRECT
 ===================================================== -->
 
 <script>
@@ -228,7 +234,6 @@
     document.addEventListener('DOMContentLoaded', function() {
 
         const form = document.getElementById('contactForm');
-        const successMsg = document.getElementById('successMessage');
 
         if (form) {
             form.addEventListener('submit', function(e) {
@@ -261,8 +266,8 @@
                     submitBtn.disabled = false;
 
                     if (data.success) {
-                        successMsg.classList.add('show');
-                        form.style.display = 'none';
+                        // ✅ REDIRECT TO THANK YOU PAGE
+                        window.location.href = 'https://fatima-iqbal.netlify.app/thank-you';
                     } else {
                         alert('❌ Something went wrong. Please try again.');
                     }
