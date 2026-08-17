@@ -795,6 +795,45 @@ nav ul li a.active,
 
     margin-bottom: 18px;
 }
+/* ================= FOOTER ================= */
+
+footer {
+    width: 100%;
+    margin-top: 70px;
+    padding: 35px 20px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-top: 1px solid var(--border);
+    background: var(--bg-dark);
+}
+
+footer h3 {
+    color: var(--white);
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: var(--text-muted);
+    font-size: 13px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+footer a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--secondary);
+}
 
 .about-content strong {
     color: var(--white);
