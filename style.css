@@ -216,6 +216,27 @@ nav ul li a.active,
 }
 
 
+/* ================= HERO BUTTONS - SIDE BY SIDE ================= */
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.hero-buttons .btn {
+    white-space: nowrap;
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /* ================= BUTTON ================= */
 
 .btn {
@@ -1096,6 +1117,11 @@ footer a:hover {
         font-size: 70px;
     }
 
+    /* Hero buttons - center on tablet */
+    .hero-buttons {
+        justify-content: center;
+    }
+
     .featured,
     .projects,
     .about,
@@ -1205,6 +1231,18 @@ footer a:hover {
         height: 190px;
 
         font-size: 55px;
+    }
+
+    /* Hero buttons - center on mobile */
+    .hero-buttons {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .hero-buttons .btn {
+        font-size: 12px;
+        padding: 10px 16px;
+        min-height: 44px;
     }
 
     .featured h2,
