@@ -1,68 +1,552 @@
-<form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- Web3Forms Access Key -->
-    <input
-        type="hidden"
-        name="access_key"
-        value="f20f8971-f3f0-4c65-a8e5-01a3aafd57bd"
-    >
+<head>
 
-    <!-- Email Subject -->
-    <input
-        type="hidden"
-        name="subject"
-        value="New Contact Message - Fatima Iqbal Portfolio"
-    >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- From Name -->
-    <input
-        type="hidden"
-        name="from_name"
-        value="Fatima Iqbal Portfolio"
-    >
+    <title>Contact | Fatima Iqbal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* =====================================================
+           CONTACT PAGE - FULL STYLED
+        ===================================================== */
+
+        .contact-section {
+            width: 90%;
+            max-width: 900px;
+
+            margin: 0 auto;
+
+            padding: 80px 0 90px;
+        }
+
+        .contact-container {
+            width: 100%;
+
+            padding: 45px;
+
+            background: #25293d;
+
+            border: 1px solid rgba(255, 255, 255, 0.08);
+
+            border-radius: 16px;
+
+            border-left: 5px solid #667eea;
+
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+
+            text-align: center;
+        }
+
+        .contact-container h1 {
+            color: #ffffff;
+
+            font-size: 42px;
+
+            font-weight: 700;
+
+            margin-bottom: 12px;
+        }
+
+        .contact-container h1 span {
+            color: #667eea;
+        }
+
+        .contact-container > p {
+            color: #9ca8bb;
+
+            font-size: 15px;
+
+            line-height: 1.8;
+
+            max-width: 650px;
+
+            margin: 0 auto 35px;
+        }
 
 
-    <div class="form-group">
-        <label for="name">Your Name</label>
+        /* ================= FORM ================= */
 
-        <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter your name"
-            required
+        .contact-container form {
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 20px;
+
+            text-align: left;
+        }
+
+        .form-group {
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 8px;
+        }
+
+        .form-group label {
+            color: #e5e7eb;
+
+            font-size: 14px;
+
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+
+            padding: 14px 16px;
+
+            background: #1d2032;
+
+            color: #ffffff;
+
+            border: 1px solid rgba(255, 255, 255, 0.12);
+
+            border-radius: 10px;
+
+            outline: none;
+
+            font-family: 'Poppins', sans-serif;
+
+            font-size: 14px;
+
+            transition: all 0.3s ease;
+
+            box-sizing: border-box;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #9ca8bb;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #667eea;
+
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+
+            min-height: 150px;
+        }
+
+
+        /* ================= SEND BUTTON ================= */
+
+        .send-btn {
+            width: 100%;
+
+            padding: 16px 25px;
+
+            margin-top: 5px;
+
+            background: #667eea;
+
+            color: #ffffff;
+
+            border: none;
+
+            border-radius: 10px;
+
+            font-family: 'Poppins', sans-serif;
+
+            font-size: 15px;
+
+            font-weight: 600;
+
+            cursor: pointer;
+
+            transition: all 0.3s ease;
+        }
+
+        .send-btn:hover {
+            background: #586ed8;
+
+            transform: translateY(-3px);
+
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.30);
+        }
+
+        .send-btn:active {
+            transform: translateY(0);
+        }
+
+
+        /* ================= SUCCESS MESSAGE ================= */
+
+        .success-message {
+            display: none;
+
+            padding: 25px;
+
+            margin-top: 20px;
+
+            background: rgba(102, 126, 234, 0.13);
+
+            border: 1px solid #667eea;
+
+            border-radius: 10px;
+
+            color: #cbd5e1;
+
+            font-size: 15px;
+
+            line-height: 1.7;
+
+            text-align: center;
+        }
+
+        .success-message.show {
+            display: block;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media (max-width: 768px) {
+
+            .contact-section {
+                width: 90%;
+
+                padding: 60px 0;
+            }
+
+            .contact-container {
+                padding: 30px 22px;
+            }
+
+            .contact-container h1 {
+                font-size: 32px;
+            }
+
+            .form-group input,
+            .form-group textarea {
+                font-size: 16px;
+                padding: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .contact-container {
+                padding: 25px 18px;
+            }
+
+            .contact-container h1 {
+                font-size: 28px;
+            }
+
+            .send-btn {
+                font-size: 14px;
+                padding: 14px 20px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER / NAVBAR
+===================================================== -->
+
+<header>
+
+    <nav>
+
+        <h2 class="logo">
+            Fatima Iqbal
+        </h2>
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="projects.html">
+                    Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="experience.html">
+                    Experience
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html" class="active">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<!-- =====================================================
+     CONTACT SECTION
+===================================================== -->
+
+<main>
+
+    <section class="contact-section">
+
+        <div class="contact-container">
+
+            <h1>
+                Get In <span>Touch</span>
+            </h1>
+
+            <p>
+                Have a question, project idea, or opportunity?
+                Feel free to send me a message. I'll get back to you
+                as soon as possible.
+            </p>
+
+
+            <!-- ================= WEB3FORMS ================= -->
+
+            <form
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                class="contact-form"
+                id="contactForm"
+            >
+
+                <!-- Web3Forms Access Key -->
+                <input
+                    type="hidden"
+                    name="access_key"
+                    value="f20f8971-f3f0-4c65-a8e5-01a3aafd57bd"
+                >
+
+                <!-- Email Subject -->
+                <input
+                    type="hidden"
+                    name="subject"
+                    value="New Contact Message - Fatima Iqbal Portfolio"
+                >
+
+                <!-- From Name -->
+                <input
+                    type="hidden"
+                    name="from_name"
+                    value="Fatima Iqbal Portfolio"
+                >
+
+                <!-- Redirect After Success -->
+                <input
+                    type="hidden"
+                    name="redirect"
+                    value="https://fatima-iqbal.netlify.app/thank-you"
+                >
+
+                <!-- NAME -->
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <!-- EMAIL -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <!-- MESSAGE -->
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message..."
+                        required
+                    ></textarea>
+                </div>
+
+                <!-- SUBMIT -->
+                <button type="submit" class="send-btn">
+                    Send Message
+                </button>
+
+            </form>
+
+            <!-- Success Message (for AJAX fallback) -->
+            <div id="successMessage" class="success-message">
+                ✅ Thank you! Your message has been sent successfully.
+                I'll get back to you soon.
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <h3>
+        Fatima Iqbal
+    </h3>
+
+    <p>
+        AI Software Engineer | AI & Machine Learning
+    </p>
+
+    <p>
+        Email:
+        <a href="mailto:fatimaiqbal3710@gmail.com">
+            fatimaiqbal3710@gmail.com
+        </a>
+    </p>
+
+    <p>
+        <a
+            href="https://github.com/fatimaiqbal34"
+            target="_blank"
+            rel="noopener noreferrer"
         >
-    </div>
+            GitHub
+        </a>
 
+        &nbsp; | &nbsp;
 
-    <div class="form-group">
-        <label for="email">Email Address</label>
-
-        <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-            required
+        <a
+            href="https://www.linkedin.com/in/fatima-iqbal-3062a03a8/"
+            target="_blank"
+            rel="noopener noreferrer"
         >
-    </div>
+            LinkedIn
+        </a>
+    </p>
+
+    <p>
+        © 2026 Fatima Iqbal. All Rights Reserved.
+    </p>
+
+</footer>
 
 
-    <div class="form-group">
-        <label for="message">Message</label>
+<!-- =====================================================
+   JAVASCRIPT - AJAX SUBMISSION (No Page Reload)
+===================================================== -->
 
-        <textarea
-            id="message"
-            name="message"
-            rows="6"
-            placeholder="Write your message..."
-            required
-        ></textarea>
-    </div>
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+
+        const form = document.getElementById('contactForm');
+        const successMsg = document.getElementById('successMessage');
+
+        form.addEventListener('submit', function(e) {
+
+            // Prevent default form submission (page reload)
+            e.preventDefault();
+
+            // Show loading state (optional)
+            const submitBtn = form.querySelector('.send-btn');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+
+            // Collect form data
+            const formData = new FormData(form);
+            const formDataObj = {};
+            formData.forEach((value, key) => {
+                formDataObj[key] = value;
+            });
+
+            // Send to Web3Forms using AJAX
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(formDataObj)
+            })
+            .then(response => response.json())
+            .then(data => {
+
+                // Reset button
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+
+                if (data.success) {
+                    // Show success message
+                    successMsg.classList.add('show');
+                    form.style.display = 'none';
+                } else {
+                    alert('❌ Something went wrong. Please try again.');
+                }
+            })
+            .catch(error => {
+                // Reset button
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+
+                console.error('Error:', error);
+                alert('❌ Network error. Please check your connection and try again.');
+            });
+
+        });
+
+    });
+
+</script>
 
 
-    <button type="submit" class="send-btn">
-        Send Message
-    </button>
+</body>
 
-</form>
+</html>
