@@ -1229,3 +1229,78 @@ footer a:hover {
         font-size: 12px;
     }
 }
+/* =====================================================
+   FINAL EDUCATION CENTER FIX
+===================================================== */
+
+section.education {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 80px 0 !important;
+    padding: 0 5% !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+}
+
+section.education h2 {
+    width: 100% !important;
+
+    margin: 0 auto 40px auto !important;
+
+    text-align: center !important;
+
+    color: var(--white) !important;
+    font-size: 40px !important;
+}
+
+section.education .info-box {
+    width: 100% !important;
+    max-width: 1000px !important;
+
+    margin: 0 auto !important;
+
+    padding: 35px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+
+    background: var(--bg-card) !important;
+
+    border: 1px solid var(--border) !important;
+    border-radius: var(--radius) !important;
+
+    box-shadow: var(--shadow) !important;
+}
+
+section.education .info-box h3 {
+    width: 100% !important;
+
+    margin: 0 0 8px 0 !important;
+
+    text-align: center !important;
+
+    color: var(--primary) !important;
+    font-size: 22px !important;
+}
+
+section.education .info-box p {
+    width: 100% !important;
+
+    margin: 0 !important;
+
+    text-align: center !important;
+
+    color: var(--text-light) !important;
+}
