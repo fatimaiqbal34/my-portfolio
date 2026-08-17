@@ -1213,15 +1213,18 @@ footer a:hover {
     }
 
     nav ul li a {
-        font-size: 12px;
+        font-size: 14px;
+        padding: 8px 12px;
+        min-height: 44px;
+        min-width: 44px;
     }
 
     .hero-text h1 {
-        font-size: 38px;
+        font-size: 32px;
     }
 
     .hero-text h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .hero-text p {
@@ -1349,7 +1352,7 @@ section.education .info-box p {
 
 
 /* =====================================================
-   CONTACT PAGE - CLEAN (SINGLE VERSION)
+   CONTACT PAGE
 ===================================================== */
 
 .contact-section {
@@ -1442,7 +1445,7 @@ section.education .info-box p {
 
     background: var(--bg-dark);
 
-    color: var(--white);
+    color: var(--text-light);
 
     border: 1px solid var(--border);
 
@@ -1462,6 +1465,7 @@ section.education .info-box p {
 .form-group input::placeholder,
 .form-group textarea::placeholder {
     color: var(--text-muted);
+    opacity: 1;
 }
 
 .form-group input:focus,
@@ -1469,6 +1473,7 @@ section.education .info-box p {
     border-color: var(--primary);
 
     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+    color: var(--white);
 }
 
 .form-group textarea {
@@ -1519,35 +1524,6 @@ section.education .info-box p {
 }
 
 
-/* ================= SUCCESS MESSAGE ================= */
-
-.success-message {
-    display: none;
-
-    padding: 25px;
-
-    margin-top: 20px;
-
-    background: rgba(102, 126, 234, 0.13);
-
-    border: 1px solid var(--primary);
-
-    border-radius: 10px;
-
-    color: var(--text-light);
-
-    font-size: 15px;
-
-    line-height: 1.7;
-
-    text-align: center;
-}
-
-.success-message.show {
-    display: block;
-}
-
-
 /* ================= CONTACT RESPONSIVE ================= */
 
 @media (max-width: 768px) {
@@ -1587,98 +1563,4 @@ section.education .info-box p {
         font-size: 14px;
         padding: 14px 20px;
     }
-}
-
-
-/* =====================================================
-   WEEK 7 FIXES - MOBILE, READABILITY, TOUCH TARGETS
-===================================================== */
-
-/* ===== Mobile Navigation - Better Tap Targets ===== */
-@media (max-width: 768px) {
-    nav ul li a {
-        font-size: 14px;
-        padding: 10px 14px;
-        display: inline-block;
-        min-height: 44px;
-        min-width: 44px;
-    }
-    
-    nav ul {
-        gap: 8px;
-    }
-}
-
-@media (max-width: 480px) {
-    nav ul li a {
-        font-size: 14px;
-        padding: 8px 12px;
-        min-height: 44px;
-        min-width: 44px;
-    }
-}
-
-/* ===== Mobile Text Size - Readability ===== */
-@media (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-    
-    h1 {
-        font-size: 28px;
-    }
-    
-    h2 {
-        font-size: 24px;
-    }
-    
-    p {
-        font-size: 15px;
-        line-height: 1.7;
-    }
-    
-    .hero-text p {
-        font-size: 15px;
-    }
-    
-    .card p,
-    .project-card p {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-text h1 {
-        font-size: 32px;
-    }
-    
-    .hero-text h3 {
-        font-size: 16px;
-    }
-}
-
-/* ===== Button Touch Targets ===== */
-@media (max-width: 768px) {
-    .btn {
-        padding: 14px 28px;
-        min-height: 48px;
-        min-width: 48px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-/* ===== Image Responsiveness ===== */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.project-card-image,
-.featured-project-image {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
 }
