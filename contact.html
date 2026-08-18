@@ -95,6 +95,7 @@
                 method="POST"
                 class="contact-form"
                 id="contactForm"
+                novalidate
             >
 
                 <!-- Web3Forms Access Key -->
@@ -118,16 +119,21 @@
                     value="Fatima Iqbal Portfolio"
                 >
 
-                <!-- ✅ REDIRECT TO GITHUB PAGES THANK YOU PAGE -->
+                <!-- Redirect -->
                 <input
                     type="hidden"
                     name="redirect"
                     value="https://fatimaiqbal34.github.io/my-portfolio/thank-you.html"
                 >
 
+
                 <!-- NAME -->
                 <div class="form-group">
-                    <label for="name">Your Name</label>
+
+                    <label for="name">
+                        Your Name
+                    </label>
+
                     <input
                         type="text"
                         id="name"
@@ -136,11 +142,17 @@
                         autocomplete="name"
                         required
                     >
+
                 </div>
+
 
                 <!-- EMAIL -->
                 <div class="form-group">
-                    <label for="email">Email Address</label>
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
                     <input
                         type="email"
                         id="email"
@@ -149,11 +161,17 @@
                         autocomplete="email"
                         required
                     >
+
                 </div>
+
 
                 <!-- MESSAGE -->
                 <div class="form-group">
-                    <label for="message">Message</label>
+
+                    <label for="message">
+                        Message
+                    </label>
+
                     <textarea
                         id="message"
                         name="message"
@@ -161,10 +179,15 @@
                         placeholder="Write your message..."
                         required
                     ></textarea>
+
                 </div>
 
+
                 <!-- SUBMIT -->
-                <button type="submit" class="send-btn">
+                <button
+                    type="submit"
+                    class="send-btn"
+                >
                     Send Message
                 </button>
 
@@ -199,6 +222,7 @@
     </p>
 
     <p>
+
         <a
             href="https://github.com/fatimaiqbal34"
             target="_blank"
@@ -216,6 +240,7 @@
         >
             LinkedIn
         </a>
+
     </p>
 
     <p>
@@ -226,65 +251,192 @@
 
 
 <!-- =====================================================
-   JAVASCRIPT - AJAX SUBMISSION WITH REDIRECT
+     JAVASCRIPT
+     FORM VALIDATION + AJAX SUBMISSION
 ===================================================== -->
 
 <script>
 
-    document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
-        const form = document.getElementById('contactForm');
+    const form = document.getElementById('contactForm');
 
-        if (form) {
-            form.addEventListener('submit', function(e) {
+    if (!form) {
+        return;
+    }
 
-                e.preventDefault();
+    form.addEventListener('submit', function (e) {
 
-                const submitBtn = form.querySelector('.send-btn');
-                const originalText = submitBtn.textContent;
-                submitBtn.textContent = 'Sending...';
-                submitBtn.disabled = true;
+        e.preventDefault();
 
-                const formData = new FormData(form);
-                const formDataObj = {};
-                formData.forEach((value, key) => {
-                    formDataObj[key] = value;
-                });
 
-                fetch('https://api.web3forms.com/submit', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Accept': 'application/json'
-                    },
-                    body: JSON.stringify(formDataObj)
-                })
-                .then(response => response.json())
-                .then(data => {
+        /* =================================================
+           GET FORM VALUES
+        ================================================= */
 
-                    submitBtn.textContent = originalText;
-                    submitBtn.disabled = false;
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const messageInput = document.getElementById('message');
 
-                    if (data.success) {
-                        // ✅ REDIRECT TO GITHUB PAGES THANK YOU PAGE
-                        window.location.href = 'https://fatimaiqbal34.github.io/my-portfolio/thank-you.html';
-                    } else {
-                        alert('❌ Something went wrong. Please try again.');
-                    }
-                })
-                .catch(error => {
+        const name = nameInput.value.trim();
+        const email = emailInput.value.trim();
+        const message = messageInput.value.trim();
 
-                    submitBtn.textContent = originalText;
-                    submitBtn.disabled = false;
 
-                    console.error('Error:', error);
-                    alert('❌ Network error. Please check your connection and try again.');
-                });
+        /* =================================================
+           NAME VALIDATION
+        ================================================= */
 
-            });
+        if (name === '') {
+
+            alert('Please enter your name.');
+
+            nameInput.focus();
+
+            return;
         }
 
+
+        /* =================================================
+           EMAIL VALIDATION
+        ================================================= */
+
+        const emailPattern =
+            /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (email === '') {
+
+            alert('Please enter your email address.');
+
+            emailInput.focus();
+
+            return;
+        }
+
+        if (!emailPattern.test(email)) {
+
+            alert('Please enter a valid email address, for example: name@example.com');
+
+            emailInput.focus();
+
+            return;
+        }
+
+
+        /* =================================================
+           MESSAGE VALIDATION
+        ================================================= */
+
+        if (message === '') {
+
+            alert('Please enter your message.');
+
+            messageInput.focus();
+
+            return;
+        }
+
+
+        /* =================================================
+           SUBMIT BUTTON
+        ================================================= */
+
+        const submitBtn =
+            form.querySelector('.send-btn');
+
+        const originalText =
+            submitBtn.textContent;
+
+
+        /*
+         Prevent multiple submissions.
+        */
+
+        if (submitBtn.disabled) {
+            return;
+        }
+
+        submitBtn.textContent = 'Sending...';
+
+        submitBtn.disabled = true;
+
+
+        /* =================================================
+           SEND DATA
+        ================================================= */
+
+        const formData = new FormData(form);
+
+        const formDataObj = {};
+
+        formData.forEach(function (value, key) {
+
+            formDataObj[key] = value;
+
+        });
+
+
+        fetch(
+            'https://api.web3forms.com/submit',
+            {
+                method: 'POST',
+
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+
+                body: JSON.stringify(formDataObj)
+            }
+        )
+
+        .then(function (response) {
+
+            return response.json();
+
+        })
+
+        .then(function (data) {
+
+            submitBtn.textContent = originalText;
+
+            submitBtn.disabled = false;
+
+
+            if (data.success) {
+
+                window.location.href =
+                    'https://fatimaiqbal34.github.io/my-portfolio/thank-you.html';
+
+            }
+
+            else {
+
+                alert(
+                    'Something went wrong. Please try again.'
+                );
+
+            }
+
+        })
+
+        .catch(function (error) {
+
+            submitBtn.textContent = originalText;
+
+            submitBtn.disabled = false;
+
+            console.error('Error:', error);
+
+            alert(
+                'Network error. Please check your connection and try again.'
+            );
+
+        });
+
     });
+
+});
 
 </script>
 
