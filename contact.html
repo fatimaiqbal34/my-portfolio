@@ -4,11 +4,41 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact | Fatima Iqbal</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+    <!-- ================= SEO ================= -->
+
+    <title>Contact | Fatima Iqbal - AI Software Engineer</title>
+
+    <meta name="description"
+          content="Contact Fatima Iqbal, an AI Software Engineer and Data Science graduate specializing in Artificial Intelligence, Machine Learning, and data-driven solutions.">
+
+    <meta name="author"
+          content="Fatima Iqbal">
+
+    <!-- ================= SOCIAL SHARE ================= -->
+
+    <meta property="og:title"
+          content="Contact | Fatima Iqbal - AI Software Engineer">
+
+    <meta property="og:description"
+          content="Get in touch with Fatima Iqbal for AI, Machine Learning, Data Science, and software opportunities.">
+
+    <meta property="og:type"
+          content="website">
+
+    <meta property="og:url"
+          content="https://fatimaiqbal34.github.io/my-portfolio/contact.html">
+
+    <meta property="og:site_name"
+          content="Fatima Iqbal Portfolio">
+
+    <!-- ================= CSS ================= -->
+
+    <link rel="stylesheet"
+          href="style.css">
 
 </head>
 
@@ -55,7 +85,8 @@
             </li>
 
             <li>
-                <a href="contact.html" class="active">
+                <a href="contact.html"
+                   class="active">
                     Contact
                 </a>
             </li>
@@ -99,27 +130,34 @@
             >
 
                 <!-- Web3Forms Access Key -->
+
                 <input
                     type="hidden"
                     name="access_key"
                     value="f20f8971-f3f0-4c65-a8e5-01a3aafd57bd"
                 >
 
+
                 <!-- Email Subject -->
+
                 <input
                     type="hidden"
                     name="subject"
                     value="New Contact Message - Fatima Iqbal Portfolio"
                 >
 
+
                 <!-- From Name -->
+
                 <input
                     type="hidden"
                     name="from_name"
                     value="Fatima Iqbal Portfolio"
                 >
 
+
                 <!-- Redirect -->
+
                 <input
                     type="hidden"
                     name="redirect"
@@ -127,7 +165,8 @@
                 >
 
 
-                <!-- NAME -->
+                <!-- ================= NAME ================= -->
+
                 <div class="form-group">
 
                     <label for="name">
@@ -146,7 +185,8 @@
                 </div>
 
 
-                <!-- EMAIL -->
+                <!-- ================= EMAIL ================= -->
+
                 <div class="form-group">
 
                     <label for="email">
@@ -165,7 +205,8 @@
                 </div>
 
 
-                <!-- MESSAGE -->
+                <!-- ================= MESSAGE ================= -->
+
                 <div class="form-group">
 
                     <label for="message">
@@ -183,7 +224,8 @@
                 </div>
 
 
-                <!-- SUBMIT -->
+                <!-- ================= SUBMIT ================= -->
+
                 <button
                     type="submit"
                     class="send-btn"
@@ -215,10 +257,13 @@
     </p>
 
     <p>
+
         Email:
+
         <a href="mailto:fatimaiqbal3710@gmail.com">
             fatimaiqbal3710@gmail.com
         </a>
+
     </p>
 
     <p>
@@ -259,37 +304,48 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    const form = document.getElementById('contactForm');
+    const form =
+        document.getElementById('contactForm');
 
     if (!form) {
         return;
     }
+
 
     form.addEventListener('submit', function (e) {
 
         e.preventDefault();
 
 
-        /* =================================================
-           GET FORM VALUES
-        ================================================= */
+        /* ================= GET VALUES ================= */
 
-        const nameInput = document.getElementById('name');
-        const emailInput = document.getElementById('email');
-        const messageInput = document.getElementById('message');
+        const nameInput =
+            document.getElementById('name');
 
-        const name = nameInput.value.trim();
-        const email = emailInput.value.trim();
-        const message = messageInput.value.trim();
+        const emailInput =
+            document.getElementById('email');
+
+        const messageInput =
+            document.getElementById('message');
 
 
-        /* =================================================
-           NAME VALIDATION
-        ================================================= */
+        const name =
+            nameInput.value.trim();
+
+        const email =
+            emailInput.value.trim();
+
+        const message =
+            messageInput.value.trim();
+
+
+        /* ================= NAME VALIDATION ================= */
 
         if (name === '') {
 
-            alert('Please enter your name.');
+            alert(
+                'Please enter your name.'
+            );
 
             nameInput.focus();
 
@@ -297,25 +353,29 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
 
-        /* =================================================
-           EMAIL VALIDATION
-        ================================================= */
+        /* ================= EMAIL VALIDATION ================= */
+
+        if (email === '') {
+
+            alert(
+                'Please enter your email address.'
+            );
+
+            emailInput.focus();
+
+            return;
+        }
+
 
         const emailPattern =
             /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-        if (email === '') {
-
-            alert('Please enter your email address.');
-
-            emailInput.focus();
-
-            return;
-        }
 
         if (!emailPattern.test(email)) {
 
-            alert('Please enter a valid email address, for example: name@example.com');
+            alert(
+                'Please enter a valid email address, for example: name@example.com'
+            );
 
             emailInput.focus();
 
@@ -323,13 +383,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
 
-        /* =================================================
-           MESSAGE VALIDATION
-        ================================================= */
+        /* ================= MESSAGE VALIDATION ================= */
 
         if (message === '') {
 
-            alert('Please enter your message.');
+            alert(
+                'Please enter your message.'
+            );
 
             messageInput.focus();
 
@@ -337,56 +397,66 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
 
-        /* =================================================
-           SUBMIT BUTTON
-        ================================================= */
+        /* ================= BUTTON ================= */
 
         const submitBtn =
             form.querySelector('.send-btn');
 
-        const originalText =
-            submitBtn.textContent;
-
-
-        /*
-         Prevent multiple submissions.
-        */
 
         if (submitBtn.disabled) {
             return;
         }
 
-        submitBtn.textContent = 'Sending...';
 
-        submitBtn.disabled = true;
+        const originalText =
+            submitBtn.textContent;
 
 
-        /* =================================================
-           SEND DATA
-        ================================================= */
+        submitBtn.textContent =
+            'Sending...';
 
-        const formData = new FormData(form);
+        submitBtn.disabled =
+            true;
+
+
+        /* ================= FORM DATA ================= */
+
+        const formData =
+            new FormData(form);
+
 
         const formDataObj = {};
 
+
         formData.forEach(function (value, key) {
 
-            formDataObj[key] = value;
+            formDataObj[key] =
+                value;
 
         });
 
 
+        /* ================= SEND ================= */
+
         fetch(
             'https://api.web3forms.com/submit',
             {
+
                 method: 'POST',
 
                 headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
+
+                    'Content-Type':
+                        'application/json',
+
+                    'Accept':
+                        'application/json'
+
                 },
 
-                body: JSON.stringify(formDataObj)
+                body:
+                    JSON.stringify(formDataObj)
+
             }
         )
 
@@ -398,38 +468,53 @@ document.addEventListener('DOMContentLoaded', function () {
 
         .then(function (data) {
 
-            submitBtn.textContent = originalText;
 
-            submitBtn.disabled = false;
-
+            /* ================= SUCCESS ================= */
 
             if (data.success) {
 
                 window.location.href =
                     'https://fatimaiqbal34.github.io/my-portfolio/thank-you.html';
 
+                return;
             }
 
-            else {
 
-                alert(
-                    'Something went wrong. Please try again.'
-                );
+            /* ================= API ERROR ================= */
 
-            }
+            submitBtn.textContent =
+                originalText;
+
+            submitBtn.disabled =
+                false;
+
+
+            alert(
+                'Something went wrong. Please try again.'
+            );
 
         })
 
         .catch(function (error) {
 
-            submitBtn.textContent = originalText;
 
-            submitBtn.disabled = false;
+            /* ================= NETWORK ERROR ================= */
 
-            console.error('Error:', error);
+            submitBtn.textContent =
+                originalText;
+
+            submitBtn.disabled =
+                false;
+
+
+            console.error(
+                'Form submission error:',
+                error
+            );
+
 
             alert(
-                'Network error. Please check your connection and try again.'
+                'Network error. Please check your internet connection and try again.'
             );
 
         });
