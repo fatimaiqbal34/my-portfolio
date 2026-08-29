@@ -1635,3 +1635,150 @@ textarea:-moz-autofill {
     color: #e5e7eb !important;
     border-color: #667eea !important;
 }
+/* =====================================================
+   MASTER AI STACK CASE STUDY
+===================================================== */
+
+.case-study {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 20px;
+}
+
+.case-study-hero {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.case-study-label {
+    color: #2563eb;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.case-study-hero h1 {
+    font-size: 46px;
+    margin: 15px 0;
+}
+
+.case-study-subtitle {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.case-study-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.secondary-btn {
+    background: transparent;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+}
+
+.secondary-btn:hover {
+    background: #2563eb;
+    color: white;
+}
+
+.case-study-section {
+    margin-bottom: 55px;
+}
+
+.case-study-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #2563eb;
+}
+
+.case-study-section p {
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.case-study-list {
+    padding-left: 25px;
+    line-height: 2;
+}
+
+.case-study-list li {
+    margin-bottom: 8px;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tech-box {
+    padding: 25px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.tech-box h3 {
+    margin-top: 0;
+    color: #2563eb;
+}
+
+.tech-box p {
+    margin-bottom: 0;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills-list span {
+    padding: 10px 16px;
+    border-radius: 20px;
+    background: #eff6ff;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.project-links {
+    text-align: center;
+}
+
+
+/* =====================================================
+   RESPONSIVE CASE STUDY
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .case-study {
+        padding: 45px 18px;
+    }
+
+    .case-study-hero h1 {
+        font-size: 34px;
+    }
+
+    .case-study-subtitle {
+        font-size: 16px;
+    }
+
+    .case-study-section h2 {
+        font-size: 25px;
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
